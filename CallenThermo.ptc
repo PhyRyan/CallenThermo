@@ -41,34 +41,45 @@
 \contentsline {section}{\numberline {4.3}弛豫时间和不可逆性}{74}{section.4.3}
 \contentsline {section}{\numberline {4.4}热流：耦合系统和逆过程}{75}{section.4.4}
 \contentsline {section}{\numberline {4.5}最大功定理}{77}{section.4.5}
-\contentsline {paragraph}{解}{80}{section*.30}
-\contentsline {paragraph}{解}{82}{section*.31}
-\contentsline {section}{\numberline {4.6}热机、制冷机和热泵的工作功率}{83}{section.4.6}
-\contentsline {section}{\numberline {4.7}Carnot循环}{86}{section.4.7}
-\contentsline {chapter}{\numberline {5}其它形式与Legendre变换}{91}{chapter.5}
-\contentsline {section}{\numberline {5.1}能量最小原理}{91}{section.5.1}
-\contentsline {section}{\numberline {5.2}Legendre变换}{96}{section.5.2}
-\contentsline {section}{\numberline {5.3}热力学势}{103}{section.5.3}
-\contentsline {section}{\numberline {5.4}推广的Massieu函数}{105}{section.5.4}
-\contentsline {chapter}{\numberline {6}Legendre变换表象中的极值原理}{107}{chapter.6}
-\contentsline {section}{\numberline {6.1}势能最小原理}{107}{section.6.1}
-\contentsline {section}{\numberline {6.2}Helmholtz势}{111}{section.6.2}
-\contentsline {section}{\numberline {6.3}焓：Joule-Thomson（节流）过程}{113}{section.6.3}
-\contentsline {chapter}{\numberline {7}Maxwell关系}{119}{chapter.7}
-\contentsline {section}{\numberline {7.1}Maxwell关系}{119}{section.7.1}
-\contentsline {section}{\numberline {7.2}Maxwell关系的辅助记忆图}{122}{section.7.2}
-\contentsline {section}{\numberline {7.3}一种导数约化的步骤}{124}{section.7.3}
-\contentsline {paragraph}{例}{125}{section*.47}
-\contentsline {paragraph}{例}{125}{section*.56}
-\contentsline {paragraph}{例}{126}{section*.57}
-\contentsline {paragraph}{例}{126}{section*.62}
-\contentsline {paragraph}{例}{126}{section*.64}
-\contentsline {section}{\numberline {7.4}简单应用}{127}{section.7.4}
-\contentsline {paragraph}{例}{129}{section*.70}
-\contentsline {paragraph}{解}{129}{section*.71}
-\contentsline {paragraph}{例}{130}{section*.72}
-\contentsline {paragraph}{解}{131}{section*.73}
-\contentsline {section}{\numberline {7.5}简单系统推广（以磁系统为例）}{132}{section.7.5}
-\contentsline {paragraph}{例}{134}{section*.75}
-\contentsline {paragraph}{解}{134}{section*.76}
+\contentsline {paragraph}{解}{80}{section*.26}
+\contentsline {paragraph}{解}{81}{section*.27}
+\contentsline {section}{\numberline {4.6}热机、制冷机和热泵的工作功率}{82}{section.4.6}
+\contentsline {section}{\numberline {4.7}Carnot循环}{85}{section.4.7}
+\contentsline {chapter}{\numberline {5}其它形式与Legendre变换}{89}{chapter.5}
+\contentsline {section}{\numberline {5.1}能量最小原理}{89}{section.5.1}
+\contentsline {section}{\numberline {5.2}Legendre变换}{94}{section.5.2}
+\contentsline {section}{\numberline {5.3}热力学势}{101}{section.5.3}
+\contentsline {section}{\numberline {5.4}推广的Massieu函数}{103}{section.5.4}
+\contentsline {chapter}{\numberline {6}Legendre变换表象中的极值原理}{105}{chapter.6}
+\contentsline {section}{\numberline {6.1}势能最小原理}{105}{section.6.1}
+\contentsline {section}{\numberline {6.2}Helmholtz势}{109}{section.6.2}
+\contentsline {section}{\numberline {6.3}Gibbs势；化学反应}{113}{section.6.3}
+\contentsline {section}{\numberline {6.4}其它势}{117}{section.6.4}
+\contentsline {section}{\numberline {6.5}经验数据的编制；生成焓}{117}{section.6.5}
+\contentsline {section}{\numberline {6.6}Massieu函数的最大值原则}{119}{section.6.6}
+\contentsline {chapter}{\numberline {7}Maxwell关系}{121}{chapter.7}
+\contentsline {section}{\numberline {7.1}Maxwell关系}{121}{section.7.1}
+\contentsline {section}{\numberline {7.2}Maxwell关系的辅助记忆图}{124}{section.7.2}
+\contentsline {section}{\numberline {7.3}单组份系统中一种导数约化的步骤}{126}{section.7.3}
+\contentsline {paragraph}{例}{127}{section*.43}
+\contentsline {paragraph}{例}{127}{section*.52}
+\contentsline {paragraph}{例}{127}{section*.53}
+\contentsline {paragraph}{例}{128}{section*.58}
+\contentsline {paragraph}{例}{128}{section*.60}
+\contentsline {section}{\numberline {7.4}简单应用}{128}{section.7.4}
+\contentsline {section}{\numberline {7.5}推广：以磁系统为例}{134}{section.7.5}
+\contentsline {chapter}{\numberline {8}热力学系统的稳定性}{137}{chapter.8}
+\contentsline {section}{\numberline {8.1}热力学系统的内在稳定性}{137}{section.8.1}
+\contentsline {section}{\numberline {8.2}其他热力学势的稳定性条件}{139}{section.8.2}
+\contentsline {section}{\numberline {8.3}热力学系统的内在稳定性}{140}{section.8.3}
+\contentsline {section}{\numberline {8.4}Le Chatelier 原理；涨落的定性影响}{141}{section.8.4}
+\contentsline {section}{\numberline {8.5}Le Chatelier-Braun原理}{142}{section.8.5}
+\contentsline {chapter}{\numberline {9}一级相变}{145}{chapter.9}
+\contentsline {section}{\numberline {9.1}能量最小原理}{145}{section.9.1}
+\contentsline {section}{\numberline {9.2}熵的不连续——潜热}{149}{section.9.2}
+\contentsline {section}{\numberline {9.3}共存曲线的斜率；Clapeyron 方程}{150}{section.9.3}
+\contentsline {section}{\numberline {9.4}不稳定的等温线和一级相变}{150}{section.9.4}
+\contentsline {section}{\numberline {9.5}一级相变的普遍属性}{150}{section.9.5}
+\contentsline {section}{\numberline {9.6}多组分系统一级相变——Gibbs 相律}{150}{section.9.6}
+\contentsline {section}{\numberline {9.7}两组分系统的相图}{150}{section.9.7}
 \contentsfinish 
