@@ -127,7 +127,7 @@ T^{(1)}=T^{(2)}
 下面给出表象变换的严格表述。设系统的基本方程已知：
 \begin{equation}
 \label{equ5.13}
-	Y=Y(X_0,X_1,\ldots,X_l)
+	Y=Y(X_0,X_1,\ldots,X_t)
 \end{equation}
 我们想找到一个将导数
 \begin{equation}
@@ -158,7 +158,8 @@ T^{(1)}=T^{(2)}
 \label{equ5.17}
 	Y=Y(P)
 \end{equation}
-从几何上容易看出，这样做无论如何都会在数学上牺牲掉基本关系\eqref{equ5.15}式的一些信息。显然对于$Y$关于斜率$dY/dX$的函数的了解并不能让我们重构出曲线$Y=Y(X)$。实际上，图\ref{fig5.4}中每一条替代的曲线都等价地满足关系$Y=Y(P)$。
+从几何上容易看出，这样做无论如何都会在数学上牺牲掉基本关系\eqref{equ5.15}式的一些信息。显然对于$Y$关于斜率$\rd Y / \rd X$的函数的了解并不能让我们重构出曲线$Y=Y(X)$。实际上，图\ref{fig5.4}中每一条替代的曲线都等价地满足关系$Y=Y(P)$。
+
 从分析的观点来看，关系$Y=Y(P)$是一个一阶微分方程，而它的积分给出的结果跟$Y=Y(X)$差一个待定的积分常数。由此可见，如果用$Y=Y(P)$代替$Y=Y(X)$成为基本方程，就会丢失掉基本关系中的一些原始信息。尽管我们希望让$P$成为一个数学上的独立变量，但这样做导致的信息丢失使得该方案完全不可行。
 
 {
@@ -293,12 +294,14 @@ Legendre变换实现了从$Y=Y(X_0,X_1,\dots,X_t)$、方程组\eqref{equ5.26}和
   $Y=Y(X_0,X_1,\dots,X_t)$ & \begin{mymath}Y[P_0, P_1, \dots, P_n] = P_0, P_1, \dots, P_n, X_{n+1}, \dots, X_t \, \text{的函数}\label{equ5.30}\end{mymath}\\
   $P_k = \frac{\partial Y}{\partial X_k}$ & \begin{mymath}-X_k = \frac{\partial Y[P_0,\dots,P_n]}{\partial P_k}, \quad k\leq n\label{equ5.31}\end{mymath} \\
    & $P_k = \frac{\partial Y[P_0,\dots,P_n]}{\partial X_k}\quad k > n$ \\
-  偏微分表示了$Y$的所有除了$X_k$以外的自然变量（比如所有满足$j\neq k$的$X_j$） & 偏微分表示了$Y[P_0,\dots,P_n]$除了已经包含了其偏微分以外的所有自然变量。 \\
+  求偏导数过程中除了$X_k$之外所有$j\neq k$的$X_j$都不变 & 求偏导数过程中其他自然变量都不变 \\
   $\,\mathrm dY=\sum_0^t P_k\,\mathrm dX_k$ & \begin{mymath}\mathrm dY[P_0, \dots, P_n] = -\sum_0^n X_k \,\mathrm dP_k + \sum_{n + 1}^t P_k \,\mathrm dX_k \label{equ5.32}\end{mymath}\\
   $Y[P_0,\dots,P_n]=Y-\sum_0^nP_kX_k$ & \begin{mymath}Y=Y[P_0,\dots,P_n]+\sum_0^nX_kP_k\label{equ5.33}\end{mymath} \\
   从方程(5.30)，(5.33)和(5.31)的前$n+1$个方程中消除掉$Y$和$X_0, X_1,\dots,X_n$可以导出变换后的基本关系。 & 从方程(5.30)，(5.33)和(5.31)的前$n+1$个方程中消除掉$Y[P_0, \dots, P_n]$和$P_0, P_1, \dots, P_n$可以导出原始的基本关系。\\
   \hline
 \end{tabularx}
+
+
 
 本节讲述了Legendre变换的数学形式，而未涉及其物理应用。在介绍热力学的应用之前，我们指出它在物理学中相比热力学更为人熟知的一个领域——Lagrangian和Hamiltonian力学中的应用。Lagrange原理宣称，存在一个特殊的函数Lagrangian\mpar{通译为“拉格朗日量”或简称“拉氏量”，本书英文人名一律不译。}，完整刻画了一个力学系统的动力学。Lagrangian是一个关于$2r$个变量的函数，其中$r$个是{\it 广义坐标(generalized coordinates)},$r$个是{\it 广义速度(generalized velocities)}。因此方程
 \begin{equation}
@@ -427,7 +430,7 @@ $T,V,\mu$的函数$U[T,\mu]$ & $U=U(S,V,N)$\\
 \label{equ5.58}
 \end{equation}
 
-简单系统内能$U$的其他可能的Legenre变换，如$U[\mu_1]$，$U[P,\mu_1]$，$U[T,\mu_1,\mu_2]$等等，由于不常用而没有通用的命名。完全的Legendre变换是$U[T,P,\mu_1,\mu_2,\dots,\mu_r]$，$U(S,V,N_1,N_2,\dots,N_t)$是它自变量的一阶齐次函数，这导致了$U[T,P,\mu_1,\mu_2,\dots,\mu_r]$恒等于0：
+简单系统内能$U$的其他可能的Legendre变换，如$U[\mu_1]$，$U[P,\mu_1]$，$U[T,\mu_1,\mu_2]$等等，由于不常用而没有通用的命名。完全的Legendre变换是$U[T,P,\mu_1,\mu_2,\dots,\mu_r]$，$U(S,V,N_1,N_2,\dots,N_t)$是它自变量的一阶齐次函数，这导致了$U[T,P,\mu_1,\mu_2,\dots,\mu_r]$恒等于0：
 
 对于
 \begin{equation}
