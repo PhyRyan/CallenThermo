@@ -7,7 +7,6 @@
 
 \section{势能最小原理}\label{sec6.1}
 
-
 我们已经看到，对于特定的问题，基本方程用一组特定的独立参数来描述最为方便，而Legendre变换则是将这种不同的描述形式最有效地联系起来。当然，如果变换后的表象不能体现极值原理的话，这种处理也就没有意义了。因此，下面来考虑如何通过适当的Legendre变换将极值原理这一基本法在各表象下体现。
 
 考虑一个与热库接触的复合系统，我们尝试在移除某些内在的约束之后，找出预言新平衡态的数学条件。下面首先回顾通过能量最小原理处理这个问题的解法。
@@ -134,7 +133,6 @@
 
 \section{Helmholtz势}
 \label{sec6.2}
-
 对于一个与热库有热接触的复合系统，其平衡态对应于状态流形上等温（热库温度）态中Helmholtz势最小的态。现实中很多过程都在有透热壁的刚性容器中发生，例如环境大气可以视为一个热库，对于这些情况Helmholtz势表象是相当合适的。
 
 Helmholtz势是以$T$,$V$,$N_1$,$N_2, \dots$为自然变量的函数。$T$为常数的条件减少了这个问题中变量的数量，使得$F$成为一个只与$V, N_1, N_2, \dots$有关的函数。这与在能量表象中处理$T$固定过程的复杂性形成鲜明的对比。具体来说，在能量表象中$U$是$S, V, N_1, N_2, \dots$的函数，但附加条件$T = T^r$暗示着这些变量间的一个关系。特别地，在对状态方程$T=T(S, V, N)$的具体形式一无所知的情况下，这个附加的限制将导致能量表象中的求解过程无从下手。
@@ -143,7 +141,6 @@ Helmholtz势是以$T$,$V$,$N_1$,$N_2, \dots$为自然变量的函数。$T$为常
     \centering
     \includegraphics[width=0.6\textwidth]{fig6.1.png}
 }
-
 
 作为Helmholtz势用途的一个例子，我们先考虑一个复合系统，它被可移动的绝热壁\mpar{如无特别说明，本节的壁都是不可透过物质的。}（例如绝热活塞）分隔为两个简单子系统。每个子系统每一个都与温度$T^r$的热库之间有热接触。下面要预测两个子系统的体积$V^{(1)}$和$V^{(2)}$。我们有
 \begin{equation}
@@ -164,7 +161,7 @@ Helmholtz势是以$T$,$V$,$N_1$,$N_2, \dots$为自然变量的函数。$T$为常
 对于一个与热库有接触的系统，Helmholtz势可以视为{\it 一定温度下可获得的功}。考虑一个与热库有热接触的系统，它与一个可逆功源之间有相互作用。在一个可逆过程中,输入可逆功源的功等于系统+热库的能量减少量：
 \begin{align}
 \label{equ6.25}
-	dW^{(RWS)} &= -\rd U - \rd U^r = -\rd U - T^r \rd S^r \\
+	\rd W^{(RWS)} &= -\rd U - \rd U^r = -\rd U - T^r \rd S^r \\
 \label{equ6.26}
 	&= -\rd U + T^r \rd S = -\rd (U - T^r S) \\
 \label{equ6.27}
@@ -197,6 +194,80 @@ Helmholtz势的变化为
 \subsection*{习题}
 
 \section{焓：Joule-Thomson过程或节流过程}\label{sec6.3}
+一个与恒压库接触的复合系统，其平衡态使得恒压（库的压）条件下的焓取最小值。相应的，一个通过绝热活塞（可自由移动）与大气接触的绝热圆柱体（这种实验系统不容易设计）非常适合在焓表象处理。发生在开放容器中的过程，例如实验室里的化学反应，环境大气可以视为压强库，但大气同时担当了热库的角色：因此分析这种过程最好在Gibbs表象下。然而还是有些特殊情况只适用焓表象，下面就会看到。
+
+上文的结论有更直接的论述过程，焓可以视为一种“热量势(potential for heat)”，它的微分为：
+\begin{equation}
+	\rd H = T \rd S + V \rd P + \mu_1 \rd N_1 + \mu_2 \rd N_2 + \dots
+\label{equ6.28}
+\end{equation}
+由此可见，对于与恒压库接触、被不可透过物质的壁包围的系统：
+\begin{equation}
+	\rd H = \dbar Q \quad (P, N_1, N_2, \dots \text{是常数})
+\end{equation}
+也就是说，{\it 压强以及除了$S, V$之外的广延量恒定的条件下，外界传入系统的热量，与系统焓的增量相等。}
+
+它在恒容情况下的版本为：
+\begin{equation}
+	\rd U = \dbar Q \quad (V, N_1, N_2, \dots \text{保持不变})
+\label{equ6.30}
+\end{equation}
+其他除了熵之外的广延量Legendre变换的规律相同。
+
+在压强恒定为大气压的条件下向系统传热，这一过程十分普遍，因此用焓求解传热过程十分方便。故而有时也将焓称为系统的“热容量”（必须强调，这里的“热”指的是能量“流动”模式，而非热力学系统的属性——热能）。
+
+为了说明焓作为“热量势”的用处，考虑一个常压系统，体积从$V_i$变到$V_f$，要计算相应的吸热量。由于压强不变，因此热量流动量等于焓的变化量：
+\begin{equation}
+	Q_{i \to f} \equiv \int \dbar Q = H_f - H_i 
+\label{equ6.31}
+\end{equation}
+若系统的基本方程已知：
+\begin{equation}
+	H = H(S, P, N)
+\label{equ6.32}
+\end{equation}
+则通过微分可得：
+\begin{equation}
+	V = \frac{\partial H}{\partial P} = V(S, P, N)
+\label{equ6.33}
+\end{equation}
+于是可以消去熵，得到$H$关于$V, P, N$的函数，这样：
+\begin{equation}
+	Q_{i \to f} = H(V_f, P, N) - H(V_i, P, N)
+\label{equ6.34}
+\end{equation}
+
+焓表象在分析一种重要的实际过程时大放异彩，这种过程叫做Joule-Thomson过程或“节流(throttling)”过程，它通常用来冷却或液化气体，作为低温实验室的second-stage refrigerator\mpar{翻译无力……}。
+
+在Joule-Thomson过程，或者"Joule-Kelvin"过程（William Thomson后来被授予了Kelvin勋爵）中，气体从高压区域渗过多空隔板进去低压区（如图\ref{fig6.2}）。该过程可以利用气泵将气体从低压区输送回高压区域来连续进行。根据下面要讨论的条件的不同，气体在通过隔板后的温度会升高或降低。
+
+{
+	\centering
+	\includegraphics[width=\textwidth]{fig6.2.png}
+	\figcaption{Joule-Thomson过程图示}
+	\label{fig6.2}
+}
+
+对于初末压强给定的真实气体，其温度变化为：在高于某一温度时为正，低于某一温度则为负，决定J-T过程加热还是冷却气体的这个温度称为{\it 反转温度 (inversion temperature)}；它取决于气体种类与初末压强。如果要通过节流过程冷却气体，则要把气体先冷却到反转温度以下。
+
+下面指出Joule-Thomson过程是在等焓的。考虑1摩尔经过节流过程的气体，如图\ref{fig6.2}所示，活塞推动气体通过多孔塞做功$P_i v_i$, 其中$v_i$是气体在高压区域的摩尔体积。随着气体从塞子透过，气体向活塞做功以保持气体压强为低压$P_f$, 相应的功为$P_f v_f$. 于是能量守恒决定了气体最终的摩尔内能——它等于气体初始的摩尔内能，加上对气体做的功$P_i v_i$，减去气体对外做的功$P_f v_f$.
+\begin{equation}
+	u_f = u_i + P_i v_i - P_f v_f 
+\label{equ6.35}
+\end{equation}
+上式可写成
+\begin{equation}
+	u_f + P_f v_f = u_i + P_i v_i 
+\label{equ6.36}
+\end{equation}
+这可以用摩尔焓$h$写成：
+\begin{equation}
+	h_f = h_i 
+\label{equ6.37}
+\end{equation}
+于是\eqref{equ6.37}式表明Joule-Thomson过程是等焓的，然而必须强调这只意味着末态的焓等于初态的焓，关于气体在过程期间的焓我们什么也没说；{\it 气体在中间过程不处于平衡态，相应的焓没有定义。}
+
+图\ref{fig6.4}画出了氮气的等焓线，一组给定的初始温度与压强决定了一个节流过程。终态压强对应同一等焓线的一点，从而定出了终态温度。
 
 {
     \centering
@@ -204,62 +275,74 @@ Helmholtz势的变化为
     \figcaption{氮气的等焓线（实线），温度转换曲线（粗实线），以及气液共存线。半定量的图。}\label{fig6.4}
 }
 
-氮气的等焓线如图\ref{fig6.4}所示，是有顶点的上凸曲线。如果初始温度和压强再这些顶点的左侧，则节流过程将会冷却气体。如果在右侧则压强的微弱减小会加热气体（当然如果有巨大的压强差越过顶点的话就可以冷却或者加热气体）。等焓线的顶点因此就决定了转换曲线，在顶点上小的压强变化不会加热或者冷却气体。%\mpar{此曲线的得出依靠计算Joule-Thomson系数的$0$点连接起来而绘制出来，而Joule-Thomson系数为$\alpha=\left(\dfrac{\partial T}{\partial p}\right)_H$。可以看出转换曲线与等焓线的交点都是等焓线上的斜率为$0$的点。}
+氮气的等焓线，如图\ref{fig6.4}所示，是有顶点的上凸曲线。如果初始温度和压强在这些顶点的左侧，则节流过程将会冷却气体。如果在右侧则压强的微弱减小会加热气体（当然，如果压强差巨大以至于越过顶点的话就既可冷却又可加热）。等焓线的顶点因此就决定了转换曲线，在顶点处，小的压强变化不会加热或者冷却气体。\mpar{此曲线的得出依靠计算Joule-Thomson系数的$0$点连接起来而绘制出来，而Joule-Thomson系数为$\alpha=\left(\dfrac{\partial T}{\partial p}\right)_H$。可以看出转换曲线与等焓线的交点都是等焓线上的斜率为$0$的点。}
 
-图\ref{fig6.4}的粗实线就是温度转换曲线，吧等焓线的顶点连接起来就行。图中还有气液平衡态的曲线。曲线下的点是液相，上面是气相。共存曲线的端点为“临界点”，在其附近“气体”和“液体”是无法分辨的，其中细节我们在第\ref{chap9}章讲述。
+图\ref{fig6.4}的粗实线就是温度转换曲线，把等焓线的顶点连接起来就行。图中还有气液平衡态的曲线。曲线下的点是液相，上面是气相。共存曲线的端点为“临界点”，在其附近“气体”和“液体”是无法分辨的，其中细节在第\ref{chap9}章讲述。
 
 如果节流过程中压强的改变足够小，我们可以用常规的微分来处理
 \begin{align}\label{equ6.38}
-dT=\left(\frac{\partial T}{\partial P}\right)_{H, N_1, N_2}dP
+	\rd T = \left( \frac{\partial T}{\partial P} \right)_{H, N_1, N_2, \dots } \rd P
 \end{align}
-其可以用标准的测量值（$c_P, \alpha, \kappa_T$）的复杂形式表示出来，我们在第\ref{chap7}章会真的写成那种形式。现在呢可以利用数学恒等式\eqref{equA.22}
+这个导数可以用标准的测量值（$c_P, \alpha, \kappa_T$）的复杂函数表示出来，第\ref{chap7}章会详细讨论那种形式。现在呢可以利用数学恒等式(A.22)将它表为
 \begin{align}\label{equ6.39}
-dT=-\left[\left(\frac{\partial H}{\partial P}\right)_T/\left(\frac{\partial H}{\partial T}\right)_P\right]dP
+	\rd T = -\left[ \left( \frac{\partial H}{\partial P} \right)_T \bigg/ \left( \frac{ \partial H}{\partial T} \right)_P \right] \rd P
 \end{align}
-其中省略了下标$N_1, N_2,\cdots$，而摩尔数保持不变。然而，$dH=TdS+VdP$是常数，因此
+其中省略了下标$N_1, N_2,\cdots$，而摩尔数保持不变。然而，$\rd H = T \rd S + V \rd P$是常数，因此
 \begin{align}\label{equ6.40}
-dT=-\frac{T(\partial S/\partial P)_T+V}{T(\partial S/\partial T)_P}dP
+	\rd T = -\frac{ T (\partial S/\partial P)_T + V}{T(\partial S/\partial T)_P} \rd P
 \end{align}
-分母部分是$Nc_P$，类比\eqref{equ3.62}或者\eqref{equ3.65}的“Maxwell关系”得到偏微分$(\partial S/\partial P)_T$等于$(-\partial V/\partial T)_P$（在这里利用的是Gibbs势的亮哥交叉导数）。考虑到$(\partial S/\partial P)_T=-(\partial V/\partial T)_P=-V\alpha$（即\eqref{equ3.67}）我们终于得到
+分母部分是$N c_P$，类比\eqref{equ3.62}或者\eqref{equ3.65}的“Maxwell关系”得到偏微分$(\partial S/\partial P)_T$等于$(-\partial V/\partial T)_P$（这里利用的是Gibbs势的两个二阶混合导数不依赖于求导次序）。考虑到$(\partial S/\partial P)_T=-(\partial V/\partial T)_P=-V\alpha$（即\eqref{equ3.67}式）我们终于得到
 \begin{align}\label{equ6.41}
-dT=\frac{v}{c_P}(T\alpha-1)dP
+	\rd T = \frac{v}{c_P}(T\alpha-1) \rd P
 \end{align}
-这是Joule-Thomson效应的基本方程。当压强变化$dP$为负数的时候，$dT$的符号与括号里面的相反。如果$T\alpha>1$，压强的变化（在“节流过程”中）会冷却气体。反转温度就取决于
+这是Joule-Thomson效应的基本方程。当压强变化$\rd P$为负数的时候，$\rd T$的符号与括号里面的相反。如果$T\alpha>1$，压强的变化（在“节流过程”中）会冷却气体。反转温度就取决于
 \begin{align}\label{equ6.42}
-\alpha T_{\text{反转}} = 1
+	\alpha T_{\text{反转}} = 1
 \end{align}
 
-对于理想气体的话热扩散系数$\alpha$等于$1/T$，因此Joule-Thomson过程中没有温度变化。所有的气体在高温和低/中压下都表现的像理想气体，其等焓线变得很“平”，如图\ref{fig6.4}。真是气体在转变温度上下的升温降温过程我们可以从例子2中看到，并由此来估计转变温度。
+对于理想气体，热扩散系数$\alpha$等于$1/T$，因此Joule-Thomson过程中没有温度变化。所有的气体在高温和低/中压下都表现的像理想气体，其等焓线变得很“平”，如图\ref{fig6.4}。真实气体在转变温度上下的升温降温过程可以从例2中看到，并由此来估计转变温度。
 
-\subsection*{例子2}
+\begin{example}
 计算正常的气体的转变温度，假定用van der Waals方程\eqref{equ3.41}来描述
-\subsection*{答案}
-我们首先必须要计算扩散系数$\alpha$。把van der Waals方程\eqref{equ3.41}对$T$在$P$不变下作微分
+
+\paragraph{解} 首先必须要计算扩散系数$\alpha$。把van der Waals方程\eqref{equ3.41}对$T$在$P$不变下作微分
 \[\alpha = \frac{1}{v}\left(\frac{\partial v}{\partial T}\right)_P=\left[\frac{Tv}{v-b}-\frac{2a(v-b)}{Rv^2}\right]^{-1} \]
-把等式右边写成$T$和$P$的函数是不现实的。一个近似的做法是考虑到摩尔体积是在$0.02m^3$这个量级的，因此$b/v$的量级为$10^{-3}$而$a/RTv$则在$10^{-3}-10^{-4}$量级（见表3.1）。因此只保留最低级数的$b/v$和$a/RTv$就可以了。令
-\[\epsilon_1\equiv\frac{b}{v}\quad \epsilon_2\equiv\frac{a}{RTv} \]
+把等式右边写成$T$和$P$的函数是不现实的。一个近似的做法是考虑到摩尔体积是在$\SI{0.02}{m^3}$这个量级的，因此$b/v$的量级为$10^{-3}$而$a/RTv$则在$10^{-3}\sim 10^{-4}$量级（见表3.1）。因此只保留最低级数的$b/v$和$a/RTv$就可以了。令
+\[
+	\varepsilon_1 \equiv \frac{b}{v}, \quad \varepsilon_2 \equiv\frac{a}{RTv} 
+\]
 从而
 \[\begin{split}
-\alpha&=\left[\frac{T}{1-\epsilon_1}-\frac{2T}{v}(v-b)\epsilon_2\right]^{-1}\\
-&=\frac{1}{T}\left[\frac{1}{1-\epsilon_1}-2(1-\epsilon_1)\epsilon_2\right]^{-1}
+	\alpha &= \left[\frac{T}{1-\varepsilon_1} - \frac{2T}{v}(v-b)\varepsilon_2 \right]^{-1} \\
+	&= \frac{1}{T} \left[ \frac{1}{1-\varepsilon_1}-2(1-\varepsilon_1)\varepsilon_2 \right]^{-1}
 \end{split} \]
-而再利用\eqref{equ6.41}
-\[dT=\frac{v}{c_P}(T\alpha-1)dP \]
+而再利用方程\eqref{equ6.41}可得
+\[
+	\rd T = \frac{v}{c_P}(T\alpha - 1) \rd P 
+\]
 而同时有
-\[T_{\text{反转}}\alpha=1 \]
-我们从而得到转变温度时
-\[[1-\epsilon_1+2\epsilon_2+\cdots]=1 \]
+\[
+	T_{\text{反转}} \alpha = 1 
+\]
+从而得到转变温度时
+\[
+	[1 - \varepsilon_1 + 2\varepsilon_2 + \cdots] = 1 
+\]
 或者说
-\[\epsilon_1=2\epsilon_2 \]
+\[
+	\epsilon_1 = 2\epsilon_2 
+\]
 反转温度即为
-\[T_{\text{反转}}\simeq\frac{2a}{bR} \]
-气体在$T_{\text{反转}}$之下则被制冷，之上则被加热。从表3.1中，我们可以计算一些气体的反转温度：$T_{\text{反转}}(\mathrm{H})_2=224$K，$T_{\text{反转}}(\mathrm{Ne})=302$K，$T_{\text{反转}}(\mathrm{N})_2=850$K，$T_{\text{反转}}(\mathrm{O})_2=1020$K，$T_{\text{反转}}(\mathrm{CO})_2=2260$K。经验上来看，反转温度与压强息息相关——在我们这里的计算中那些被忽略的高阶项们。H$_2$的零压反转温度为$204$K，而氖则是$228$K——这与我们的粗犷的计算是符合的相当好的。对于多原子气体就符合的不那么好了，CO$_2$的测量值为$1275$K而我们计算的结果是$2260$K。
+\[
+	T_{\text{反转}} \simeq \frac{2a}{bR} 
+\]
+气体在$T_{\text{反转}}$之下则被制冷，之上则被加热。从表3.1中，我们可以计算一些气体的反转温度：$T_{\text{反转}}(\mathrm{H})_2 = \SI{224}{K}$，$T_{\text{反转}}(\mathrm{Ne}) = \SI{302}{K}$，$T_{\text{反转}}(\mathrm{N})_2 = \SI{850}{K}$，$T_{\text{反转}}(\mathrm{O})_2 = \SI{1020}{K}$，$T_{\text{反转}}(\mathrm{CO})_2 = \SI{2260}{K}$。经验上来看，反转温度与压强息息相关——在上文计算中的那些被忽略的高阶项当中。\ce{H2}的零压反转温度为$\SI{204}{K}$，而氖则是$\SI{228}{K}$——这与上面的粗犷的计算是符合的相当好的。对于多原子气体就符合的不那么好了，\ce{CO2}的测量值为$\SI{1275}{K}$，而计算的结果是$\SI{2260}{K}$。
+\end{example}
 
-
+\subsection*{习题}
 
 \section{Gibbs势；化学反应}
 \label{sec6.4}
-
 对于一个与热库和压强库接触的复合系统，其平衡态使得等温和等压（与库相等）态流形上的Gibbs势最小。
 
 Gibbs势是自变量为$T, P, N_1, N_2, \dots$的自然函数，在$T, P$恒定的情形中，用它分析问题十分方便。日常有无数过程是暴露在大气中进行的，因此有恒定的温度和压强。且人们关心的过程常常发生在作为热库和压强库大系统的一个小的子系统中（就像在大红酒桶中发酵的葡萄一样）。
@@ -384,6 +467,7 @@ $dH/d\tilde{N}$是\emph{反应热}；也就是在平衡态下每单位反应吸�
 如果增大的压强使得$\Delta \tilde{N}$的解变为$+1, 2$我们去掉在$\Delta \tilde{N}$允许范围以外的值；它将导致不物理的解$\varepsilon=1.1$但是$\varepsilon$必须在$0$和$1$之间，因此反应在$\Delta \tilde{N}=\Delta \tilde{N}_{max}=\frac{1}{2}$（或$\varepsilon=1$）时终结。
 最终摩尔数为$N_{H_2}=1, N_{CO_2}=\frac{1}{2}, N_{CH_4}=2, N_{H_2O}=5$。
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{其它势}
 \label{sec6.5}
@@ -395,12 +479,10 @@ $dH/d\tilde{N}$是\emph{反应热}；也就是在平衡态下每单位反应吸�
 {\bf 解}
 
 假设两组分（糖水混合物）的基本方程已知，基本方程在表象$U[T, V, \mu_w, N_s]$下的形式最为方便。该表象下$S$和$N_{w}$被它们相应的强度量所取代，但体积$V$和糖的摩尔数$N_{s}$没有变换。透热壁保证了温度可以被大水桶（热库）所决定，且半透的瓶盖保证了$\mu_{w}$的值由水桶（“水库”）所决定。没有剩下的问题了！我们知道广义势$U[T, V, \mu_{w}, N_{s}]$的所有独立变量，为了得到瓶子中的压强，我们仅仅需要对势求导：
->>>>>>> ChzRuan/master
 \[ P=-\frac{\partial U[T, V, \mu_{w}, N_{s}]}{\partial V} \]
 将它与能量或熵表象下的解的比较留给读者。
 各种未被要求的变量也进入到分析当中——例如瓶中的熵，或桶中的熵，能量，摩尔数。
 对于每种外来变量，都需要为消去它增加一个方程。
-
 合适表象的选择很明显是简化问题的关键，并且只有在热力学计算的实践中才能掌握。
 \end{example}
 
@@ -428,7 +510,6 @@ $dH/d\tilde{N}$是\emph{反应热}；也就是在平衡态下每单位反应吸�
 还有一种叫做“饱和蒸汽表”的表格给出了$P$和$T$处于气-液共存曲线时水的液态和气态相的特性值，这种“饱和蒸汽表”将在表9.1给出。%表格引用
 
 另一种很常见的热力学数据表示方法是“热力学图表”或图示。这种图表必然牺牲了精度，却简洁紧凑地概括了大量数据。从概念上，这类最简化的图表以$T$和$P$标识两个坐标轴。然后，单组分系统以一族恒定Gibbs势$\mu$的曲线表示。原则上，所有想要的数据都能依此计算。比如，测定摩尔体积就需要读取相应温度下附近两点的压强值，由此得到微分$\left(\Delta\mu/\Delta P\right)_T$的数值估计，即摩尔体积。
-
 替代性地，图上覆盖着一族等体积线，每个等体积线标着一个$v$。
 类似地，恒定摩尔熵$s$、恒定摩尔焓$h$、恒定摩尔热膨胀系数$\alpha$、恒定值$\kappa$等都覆盖在上面。
 唯一的限制是图表的可读性。
@@ -449,7 +530,6 @@ $dH/d\tilde{N}$是\emph{反应热}；也就是在平衡态下每单位反应吸�
 
 最后，简单回顾一下通过最少的表格所列或测量得到的数据构造单组分系统的基本方程的过程。
 所需最少信息为$\alpha(T,P)$、$c_p(T,P)$和$\kappa(T,P)$，加上参考状态（可能是信息焓）的$v_0$和$s_0$值。
-
 由这些数据可以通过对Gibbs-Duhem关系式$\rd \left(G/N\right)=-s\rd T+v\text{P}$积分得到摩尔Gibbs势——前提是由以下方程得到$s(T,P)$和$v(T,P)$的数值积分
 \[\rd s=\left(\frac{\partial s}{\partial T}\right)_P\rd T+\left(\frac{\partial s}{\partial P}\right)_T\rd P=\frac{c_P}{T}\rd T-v\alpha\rd P\]
 和
@@ -459,7 +539,6 @@ $dH/d\tilde{N}$是\emph{反应热}；也就是在平衡态下每单位反应吸�
 
 \section{Massieu函数的最大值原则}
 \label{sec6.7}
-
 在能量表象中，熵值为常量时能量为最小值。由此可见在被变换的（强度）量为常量时，经Legendre变换后的能量取最小值。类似地，在熵表象中，能量为常量时熵为最大值。同理可知在被变换的（强度）量为常量时，经Legendre变换的熵取极大值。%intensive 作何翻译 SurgamIdentidem：intensive variable —— 强度量
 
 对于三个常见的Massieu函数中的两个，最大值原理可以简单得到，因为这些函数直接与势能相关（比如，能量的变换）。从方程\eqref{equ5.61}可得
