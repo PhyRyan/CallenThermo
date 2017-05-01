@@ -1,0 +1,73 @@
+\chapter{熵表象下的统计力学：微正则系综}
+\label{chap15}
+{\it （译者注：原文所有的`formalism'翻译为“系综”。如`microcanonical formalism'译作“微正则系综”。）}
+
+\section{封闭系统的熵的物理意义}
+热力学是普适而有力的理论体系，并且只以几个简单假设为基础。熵在热力学假设中处于核心地位，它是作为极值原理决定平衡态的抽象数学函数引入的，然而在之后的理论中，熵与能量、体积、摩尔数、磁矩等物理量一样，是系统的广延量。后面几个量都有清晰而基础的物理意义，而熵在其中显得格格不入。
+
+统计力学诠释了熵的物理意义，从而为极值原理提供了启发性的论证。对于一些有解析解的简单系统，这种诠释能够直接计算熵，于是也得出了基本方程。
+
+首先考虑一个体积、粒子数固定的封闭系统，为了明确起见不妨认为其中是液体（别的也可以）。系统的限制条件是参量$U, V, N$的值不变，量子力学表明，微观系统\mpar{原文为“macroscopic”（宏观系统），显然与下文不符（能级量子化是微观系统的特性），怀疑此处为笔误，译文进行了修改。}给定的$U, V, N$可以对应多个分立的量子态，系统可能处于这些状态中的任何一个。
+
+人们也许天真地以为，初始位于某个定态\mpar{即Schrodinger方程的能量本征解。}的系统将永远保持那个状态，实际上这就是量子力学入门课告诉我们的；表面上看，指定了特定状态的“量子数”是“运动常数”。这一简单的“虚构”看法在研究微观原子系统（这也是量子力学应用最广的领域）尚可接受，而在研究宏观系统时则大错特错。
+
+这一显然的悖论源自物理系统的{\it 孤立性}假设。{\it 没有任何物理系统是真正孤立的。} 微弱而长程的引力、电磁力等等充满了整个空间，不仅空间上分离的两个系统有力的作用，而且力场{\it 自身}是一种物理系统、参加与“孤立系统”的相互作用。真空现在被认为是具有复杂涨落实体——在其中不断发生着电子、正电子、中微子以及其他无数神秘的亚原子实体产生、再吸收的过程。所有这些事件都可以与“孤立系统”发生耦合。
+
+对于简单系统（例如氢原子），上面提及的微弱相互作用几乎不会引起量子态的跃迁。因为氢原子等等系统量子态的能量范围较大，空间中微弱的随机相互作用提供不了这么大的能量使能级改变。即便如此，这种“几乎不会”的过程还是可能发生的，一个处于激发态的原子会“自发”发射一个光子，然后衰变到低能态。量子场论揭示了这种表面上“自发”的跃迁实际上是激发态原子与真空模式相互作用而{\it 诱发}的结果。这种原子{\it 不会}无限长的处于一个态，因为它会与真空模式进行相互作用。
+
+宏观系统的量子态是连续的，各能级之差是微小的。对于大量原子组成的宏观系统，单个原子的能量本征态“分裂”成系统的$10^{23}$个本征态，因此平均的能级差减小了$\sim 10^{23}$倍。这样，即使最微弱的随机相互作用场或者真空涨落的微弱耦合也能够让系统在不同状态之间演化。
+
+{\it 
+更加真实的看法是，宏观系统在它可能的各量子态之间不断进行随机、迅速的跃迁。宏观测量只能测到无数量子态的平均性质。
+
+{\bf 原文：} A realistic view of a macroscopic system is one in which the system makes enormously rapid random transitions among its quantum states. A macroscopic measurement senses only an average of the properties of myriads of quantum states.
+}
+
+所有“统计力学学家”都同意上一段的结论，然而在诱发跃迁的{\it 主要的}物理机制上有分歧。不同的物理机制相互竞争，有的机制也许在某些甚至所有系统中都居主导地位。这些都无所谓——任何机制都行，只要保证系统在量子态之间的跃迁是随机、迅速的就好了，统计力学理论只要求这一点。
+
+既然这种跃迁是随机发生的，那么很可以假设{\it 宏观系统处于任意可能的状态的概率相等}——“可能的状态”是指系统在外部约束下可以处于的状态。
+
+系统处于所有可能微观态的等概率假设是统计力学的基本假设。第III部分将进一步探究它的可靠性，现在只要接受就可以了，它具有先验的合理性，从它导出的结论大获成功。
+
+假设系统的某些限制被移除，例如打开阀门让系统膨胀至更大体积。从微观层面看，移除限制的过程使得原来某些不可达到的微观态变得可以达到，系统可以在这些新的可能状态之间跃迁。一段时间后，新旧状态的差别就消失了，系统在{\it 增广了的}状态集合里等概率随机跃迁。{\it 微观态数目增长到相应限制之下的最大值。}\mpar{原文：The number of microstates among which the system undergoes transitions, and which thereby share uniform probability of occupation, increases to the maximum permitted by the imposed constraints. 原文意思有所重复，译文进行删减。}
+
+这与热力学里面熵的假设太像了！热力学假设熵在给定约束下取最大值。这暗示着熵与宏观约束相应的微观态数目是一回事。
+
+但是有个问题：熵是广延量，具有可加性，而微观态数目是相乘的。即复合系统的微观态数为子系统状态数的乘积（例如两个骰子的“微观态”数为$6 \times 6 = 36$）。为了用微观态数目解释熵，我们得定义一个与状态数有关的、可加性的量。（唯一的！）答案是微观态数目的对数（乘积的对数等于各因子对数之和），即
+\begin{equation}
+	S = k_B \ln \Omega.
+\label{equ15.1}
+\end{equation}
+其中$\Omega$表示宏观约束相应的微观态数目。常数因子$k_B$（称为Boltzmann常数）仅仅用来决定$S$的取值，通常定义与温度的Kelvin温标一致，即$T^{-1} = \partial S / \partial U$. 后面会看到这要求$k_B = R/N_A = 1.3807 \times 10^{-23} \, \mathrm{J/K}$.
+
+{\it 熵的定义式\eqref{equ15.1}是统计力学的基础。}
+
+就像热力学在Legendre变换的处理下更加便利那样，上面的这个额外假设用类似的数学理论加以处理会更有效，当然即使不这样处理，这个简洁的新假设也是完备的，足以发展出统计力学理论。直接应用该假设，也就是直接计算系统可能的状态数目的对数，原则上能算出$S$关于宏观限制$U, V, N$的函数，这就是熵表象下的统计力学，或者用场论的说法，是{\it 微正则系综 (microcanonical formalism)}\mpar{“系综”的英文为“ensemble”，为了与其他教材说法一致我们将“xx formalism”都译成了“xx系综”。}之中的统计力学。 
+
+本章其余几节要处理一系列微正则系综的例子，从而说明新假设的完备性。
+
+就像热力学当中熵表象并不总是最方便的表象那样，统计力学的微正则系综经常是没有解析解的。通常要用到Legendre表象变换，这在下一章讲述。即使如此，微正则系综仍然建立起统计力学清晰、基本的逻辑基础。
+
+\subsection*{习题}
+\begin{itemize}
+\item[15.1-1.] A system is composed of two harmonic oscillators each of natural frequency $\omega_0$ and each having permissible energies $(n + \dfrac{1}{2}) \hbar \omega$, where $n$ is any non-negative integer. The total energy of the system is $E' = n' \hbar \omega$, where $n'$ is a
+positive integer. How many microstates are available to the system? What is the entropy of the system?
+
+A second system is also composed of two harmonic oscillators, each of natural frequency $2\omega_0$. The total energy of this system is $E'' = n'' \hbar \omega_0$, where $n''$ is an even integer. How many microstates are available to this system? What is the entropy of this system? 
+
+What is the entropy of the system composed of the two preceding subsystems (separated and enclosed by a totally restrictive wall)? Express the entropy as a function of $E'$ and $E''$.
+
+\begin{flushright}
+{\it Answer:}
+
+${\displaystyle S_{\text{tot}} = k_B \ln \left( \frac{E' E''}{2\hbar^2 \omega_0^2} \right) }$
+\end{flushright}
+
+\item[15.1-2.] A system is composed of two harmonic oscillators of natural frequencies $\omega_0$ and 2$\omega_0$, respectively. If the system has total energy $E = (n + \dfrac{1}{2}) \hbar \omega_0$, where $n$ is an odd integer, what is the entropy of the system?
+
+If a composite system is composed of two non-interacting subsystems of the type just described, having energies $E_1$ and $E_2$, what is the entropy of the composite system?
+\end{itemize}
+
+
+\section{晶体的Einstein模型}
+\label{sec15.2}
