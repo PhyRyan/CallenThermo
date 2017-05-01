@@ -1,90 +1,96 @@
 \select@language {english}
-\contentsline {part}{\@mypartnumtocformat {I}{经典热力学基本原理}}{1}{part.1}
+\contentsline {part}{\@mypartnumtocformat {I}{经典热力学基本原理}}{3}{part.1}
 \ttl@starttoc {default@1}
-\contentsline {chapter}{\numberline {1}热力学基本问题与假设}{5}{chapter.1}
-\contentsline {section}{\numberline {1.1}宏观测量的时间性质}{5}{section.1.1}
-\contentsline {section}{\numberline {1.2}宏观测量的空间本质}{6}{section.1.2}
-\contentsline {section}{\numberline {1.3}热力学系统的组成}{8}{section.1.3}
-\contentsline {section}{\numberline {1.4}内能}{9}{section.1.4}
-\contentsline {section}{\numberline {1.5}热力学平衡态}{10}{section.1.5}
-\contentsline {paragraph}{假设 \uppercase {i}.}{10}{section*.7}
-\contentsline {paragraph}{Postulate \uppercase {i}.}{10}{section*.8}
-\contentsline {section}{\numberline {1.6}壁与限制}{11}{section.1.6}
-\contentsline {section}{\numberline {1.7}能量的可测量性}{12}{section.1.7}
-\contentsline {section}{\numberline {1.8}热的定量定义}{13}{section.1.8}
-\contentsline {section}{\numberline {1.9}热力学基本问题}{22}{section.1.9}
-\contentsline {section}{\numberline {1.10}最大熵假设}{23}{section.1.10}
-\contentsline {chapter}{\numberline {2}平衡条件}{29}{chapter.2}
-\contentsline {section}{\numberline {2.1}强度量}{29}{section.2.1}
-\contentsline {section}{\numberline {2.2}状态方程}{31}{section.2.2}
-\contentsline {section}{\numberline {2.3}熵表象下的强度量}{34}{section.2.3}
-\contentsline {section}{\numberline {2.4}热平衡态——温度}{36}{section.2.4}
-\contentsline {section}{\numberline {2.5}温度定义与直观概念的一致性}{38}{section.2.5}
-\contentsline {section}{\numberline {2.6}温度单位}{38}{section.2.6}
-\contentsline {section}{\numberline {2.7}力学平衡}{40}{section.2.7}
-\contentsline {section}{\numberline {2.8}存在物质交换时的平衡态}{43}{section.2.8}
-\contentsline {section}{\numberline {2.9}化学平衡}{44}{section.2.9}
-\contentsline {chapter}{\numberline {3}形式关系与样例系统}{47}{chapter.3}
-\contentsline {section}{\numberline {3.1}热力学Euler方程}{47}{section.3.1}
-\contentsline {section}{\numberline {3.2}Gibbs-Duhem关系}{48}{section.3.2}
-\contentsline {section}{\numberline {3.3}形式关系总结}{50}{section.3.3}
-\contentsline {section}{\numberline {3.4}单组分/多组分简单理想气体}{52}{section.3.4}
-\contentsline {section}{\numberline {3.5}理想van der Waals流体}{56}{section.3.5}
-\contentsline {section}{\numberline {3.6}黑体辐射系统}{59}{section.3.6}
-\contentsline {section}{\numberline {3.7}橡胶带系统}{60}{section.3.7}
-\contentsline {section}{\numberline {3.8}不可控变量；磁系统}{61}{section.3.8}
-\contentsline {section}{\numberline {3.9}摩尔热容与其他导出量}{62}{section.3.9}
-\contentsline {paragraph}{解答}{65}{section*.21}
-\contentsline {chapter}{\numberline {4}可逆过程和最大功定理}{67}{chapter.4}
-\contentsline {section}{\numberline {4.1}可能和不可能的过程}{67}{section.4.1}
-\contentsline {section}{\numberline {4.2}准静态和绝热过程}{70}{section.4.2}
-\contentsline {section}{\numberline {4.3}弛豫时间和不可逆性}{74}{section.4.3}
-\contentsline {section}{\numberline {4.4}热流：耦合系统和逆过程}{75}{section.4.4}
-\contentsline {section}{\numberline {4.5}最大功定理}{77}{section.4.5}
-\contentsline {paragraph}{解}{80}{section*.26}
-\contentsline {paragraph}{解}{81}{section*.27}
-\contentsline {section}{\numberline {4.6}热机、制冷机和热泵的工作功率}{82}{section.4.6}
-\contentsline {section}{\numberline {4.7}Carnot循环}{85}{section.4.7}
-\contentsline {section}{\numberline {4.8}温度与熵的可测量性}{89}{section.4.8}
-\contentsline {section}{\numberline {4.9}热机性能的其他判据；“内可逆热机”的输出功率}{90}{section.4.9}
-\contentsline {section}{\numberline {4.10}其他循环过程}{92}{section.4.10}
-\contentsline {chapter}{\numberline {5}其它表象，Legendre变换}{95}{chapter.5}
-\contentsline {section}{\numberline {5.1}能量最小原理}{95}{section.5.1}
-\contentsline {section}{\numberline {5.2}Legendre变换}{99}{section.5.2}
-\contentsline {section}{\numberline {5.3}热力学势}{106}{section.5.3}
-\contentsline {section}{\numberline {5.4}推广的Massieu函数}{108}{section.5.4}
-\contentsline {chapter}{\numberline {6}Legendre变换表象中的极值原理}{111}{chapter.6}
-\contentsline {section}{\numberline {6.1}势能最小原理}{111}{section.6.1}
-\contentsline {section}{\numberline {6.2}Helmholtz势}{115}{section.6.2}
-\contentsline {section}{\numberline {6.3}焓：Joule-Thomson过程或节流过程}{117}{section.6.3}
-\contentsline {section}{\numberline {6.4}Gibbs势；化学反应}{119}{section.6.4}
-\contentsline {section}{\numberline {6.5}其它势}{123}{section.6.5}
-\contentsline {section}{\numberline {6.6}经验数据的编制；生成焓}{123}{section.6.6}
-\contentsline {section}{\numberline {6.7}Massieu函数的最大值原则}{125}{section.6.7}
-\contentsline {chapter}{\numberline {7}Maxwell关系}{127}{chapter.7}
-\contentsline {section}{\numberline {7.1}Maxwell关系的辅助记忆图}{130}{section.7.1}
-\contentsline {section}{\numberline {7.2}单组份系统中一种导数约化的步骤}{132}{section.7.2}
-\contentsline {paragraph}{例}{133}{section*.42}
-\contentsline {paragraph}{例}{133}{section*.51}
-\contentsline {paragraph}{例}{133}{section*.52}
-\contentsline {paragraph}{例}{134}{section*.57}
-\contentsline {paragraph}{例}{134}{section*.59}
-\contentsline {section}{\numberline {7.3}简单应用}{134}{section.7.3}
-\contentsline {section}{\numberline {7.4}推广：以磁系统为例}{140}{section.7.4}
-\contentsline {chapter}{\numberline {8}热力学系统的稳定性}{143}{chapter.8}
-\contentsline {section}{\numberline {8.1}热力学系统的内在稳定性}{143}{section.8.1}
-\contentsline {section}{\numberline {8.2}其他热力学势的稳定性条件}{146}{section.8.2}
-\contentsline {section}{\numberline {8.3}热力学系统的内在稳定性}{147}{section.8.3}
-\contentsline {section}{\numberline {8.4}Le Chatelier 原理；涨落的定性影响}{148}{section.8.4}
-\contentsline {section}{\numberline {8.5}Le Chatelier-Braun原理}{149}{section.8.5}
-\contentsline {chapter}{\numberline {9}一级相变}{153}{chapter.9}
-\contentsline {section}{\numberline {9.1}能量最小原理}{153}{section.9.1}
-\contentsline {section}{\numberline {9.2}熵的不连续——潜热}{157}{section.9.2}
-\contentsline {section}{\numberline {9.3}共存曲线的斜率；Clapeyron 方程}{158}{section.9.3}
-\contentsline {section}{\numberline {9.4}不稳定的等温线和一级相变}{158}{section.9.4}
-\contentsline {section}{\numberline {9.5}一级相变的普遍属性}{158}{section.9.5}
-\contentsline {section}{\numberline {9.6}多组分系统一级相变——Gibbs 相律}{158}{section.9.6}
-\contentsline {section}{\numberline {9.7}两组分系统的相图}{158}{section.9.7}
-\contentsline {chapter}{\numberline {10}临界现象}{159}{chapter.10}
-\contentsline {section}{\numberline {10.1}临界点附近的热力学}{159}{section.10.1}
+\contentsline {chapter}{\numberline {1}热力学基本问题与假设}{7}{chapter.1}
+\contentsline {section}{\numberline {1.1}宏观测量的时间性质}{7}{section.1.1}
+\contentsline {section}{\numberline {1.2}宏观测量的空间本质}{8}{section.1.2}
+\contentsline {section}{\numberline {1.3}热力学系统的组成}{10}{section.1.3}
+\contentsline {section}{\numberline {1.4}内能}{11}{section.1.4}
+\contentsline {section}{\numberline {1.5}热力学平衡态}{12}{section.1.5}
+\contentsline {paragraph}{假设 \uppercase {i}.}{12}{section*.7}
+\contentsline {paragraph}{Postulate \uppercase {i}.}{12}{section*.8}
+\contentsline {section}{\numberline {1.6}壁与限制}{13}{section.1.6}
+\contentsline {section}{\numberline {1.7}能量的可测量性}{14}{section.1.7}
+\contentsline {section}{\numberline {1.8}热的定量定义}{15}{section.1.8}
+\contentsline {section}{\numberline {1.9}热力学基本问题}{24}{section.1.9}
+\contentsline {section}{\numberline {1.10}最大熵假设}{25}{section.1.10}
+\contentsline {chapter}{\numberline {2}平衡条件}{31}{chapter.2}
+\contentsline {section}{\numberline {2.1}强度量}{31}{section.2.1}
+\contentsline {section}{\numberline {2.2}状态方程}{33}{section.2.2}
+\contentsline {section}{\numberline {2.3}熵表象下的强度量}{36}{section.2.3}
+\contentsline {section}{\numberline {2.4}热平衡态——温度}{38}{section.2.4}
+\contentsline {section}{\numberline {2.5}温度定义与直观概念的一致性}{40}{section.2.5}
+\contentsline {section}{\numberline {2.6}温度单位}{40}{section.2.6}
+\contentsline {section}{\numberline {2.7}力学平衡}{42}{section.2.7}
+\contentsline {section}{\numberline {2.8}存在物质交换时的平衡态}{45}{section.2.8}
+\contentsline {section}{\numberline {2.9}化学平衡}{46}{section.2.9}
+\contentsline {chapter}{\numberline {3}形式关系与样例系统}{49}{chapter.3}
+\contentsline {section}{\numberline {3.1}热力学Euler方程}{49}{section.3.1}
+\contentsline {section}{\numberline {3.2}Gibbs-Duhem关系}{50}{section.3.2}
+\contentsline {section}{\numberline {3.3}形式关系总结}{52}{section.3.3}
+\contentsline {section}{\numberline {3.4}单组分/多组分简单理想气体}{54}{section.3.4}
+\contentsline {section}{\numberline {3.5}理想van der Waals流体}{58}{section.3.5}
+\contentsline {section}{\numberline {3.6}黑体辐射系统}{61}{section.3.6}
+\contentsline {section}{\numberline {3.7}橡胶带系统}{62}{section.3.7}
+\contentsline {section}{\numberline {3.8}不可控变量；磁系统}{63}{section.3.8}
+\contentsline {section}{\numberline {3.9}摩尔热容与其他导出量}{64}{section.3.9}
+\contentsline {paragraph}{解答}{67}{section*.21}
+\contentsline {chapter}{\numberline {4}可逆过程和最大功定理}{69}{chapter.4}
+\contentsline {section}{\numberline {4.1}可能和不可能的过程}{69}{section.4.1}
+\contentsline {section}{\numberline {4.2}准静态和绝热过程}{72}{section.4.2}
+\contentsline {section}{\numberline {4.3}弛豫时间和不可逆性}{76}{section.4.3}
+\contentsline {section}{\numberline {4.4}热流：耦合系统和逆过程}{77}{section.4.4}
+\contentsline {section}{\numberline {4.5}最大功定理}{79}{section.4.5}
+\contentsline {paragraph}{解}{82}{section*.26}
+\contentsline {paragraph}{解}{83}{section*.27}
+\contentsline {section}{\numberline {4.6}热机、制冷机和热泵的工作功率}{84}{section.4.6}
+\contentsline {section}{\numberline {4.7}Carnot循环}{87}{section.4.7}
+\contentsline {section}{\numberline {4.8}温度与熵的可测量性}{91}{section.4.8}
+\contentsline {section}{\numberline {4.9}热机性能的其他判据；“内可逆热机”的输出功率}{92}{section.4.9}
+\contentsline {section}{\numberline {4.10}其他循环过程}{94}{section.4.10}
+\contentsline {chapter}{\numberline {5}其它表象，Legendre变换}{97}{chapter.5}
+\contentsline {section}{\numberline {5.1}能量最小原理}{97}{section.5.1}
+\contentsline {section}{\numberline {5.2}Legendre变换}{101}{section.5.2}
+\contentsline {section}{\numberline {5.3}热力学势}{108}{section.5.3}
+\contentsline {section}{\numberline {5.4}推广的Massieu函数}{110}{section.5.4}
+\contentsline {chapter}{\numberline {6}Legendre变换表象中的极值原理}{113}{chapter.6}
+\contentsline {section}{\numberline {6.1}势能最小原理}{113}{section.6.1}
+\contentsline {section}{\numberline {6.2}Helmholtz势}{117}{section.6.2}
+\contentsline {section}{\numberline {6.3}焓：Joule-Thomson过程或节流过程}{119}{section.6.3}
+\contentsline {paragraph}{解}{122}{section*.37}
+\contentsline {section}{\numberline {6.4}Gibbs势；化学反应}{123}{section.6.4}
+\contentsline {section}{\numberline {6.5}其它势}{127}{section.6.5}
+\contentsline {section}{\numberline {6.6}经验数据的编制；生成焓}{127}{section.6.6}
+\contentsline {section}{\numberline {6.7}Massieu函数的最大值原则}{129}{section.6.7}
+\contentsline {chapter}{\numberline {7}Maxwell关系}{131}{chapter.7}
+\contentsline {section}{\numberline {7.1}Maxwell关系的辅助记忆图}{134}{section.7.1}
+\contentsline {section}{\numberline {7.2}单组份系统中一种导数约化的步骤}{136}{section.7.2}
+\contentsline {paragraph}{例}{137}{section*.42}
+\contentsline {paragraph}{例}{137}{section*.51}
+\contentsline {paragraph}{例}{137}{section*.52}
+\contentsline {paragraph}{例}{138}{section*.57}
+\contentsline {paragraph}{例}{138}{section*.59}
+\contentsline {section}{\numberline {7.3}简单应用}{138}{section.7.3}
+\contentsline {section}{\numberline {7.4}推广：以磁系统为例}{144}{section.7.4}
+\contentsline {chapter}{\numberline {8}热力学系统的稳定性}{147}{chapter.8}
+\contentsline {section}{\numberline {8.1}热力学系统的内在稳定性}{147}{section.8.1}
+\contentsline {section}{\numberline {8.2}其他热力学势的稳定性条件}{150}{section.8.2}
+\contentsline {section}{\numberline {8.3}热力学系统的内在稳定性}{151}{section.8.3}
+\contentsline {section}{\numberline {8.4}Le Chatelier 原理；涨落的定性影响}{152}{section.8.4}
+\contentsline {section}{\numberline {8.5}Le Chatelier-Braun原理}{153}{section.8.5}
+\contentsline {chapter}{\numberline {9}一级相变}{157}{chapter.9}
+\contentsline {section}{\numberline {9.1}能量最小原理}{157}{section.9.1}
+\contentsline {section}{\numberline {9.2}熵的不连续——潜热}{161}{section.9.2}
+\contentsline {section}{\numberline {9.3}共存曲线的斜率；Clapeyron 方程}{162}{section.9.3}
+\contentsline {section}{\numberline {9.4}不稳定的等温线和一级相变}{162}{section.9.4}
+\contentsline {section}{\numberline {9.5}一级相变的普遍属性}{162}{section.9.5}
+\contentsline {section}{\numberline {9.6}多组分系统一级相变——Gibbs 相律}{162}{section.9.6}
+\contentsline {section}{\numberline {9.7}两组分系统的相图}{162}{section.9.7}
+\contentsline {chapter}{\numberline {10}临界现象}{163}{chapter.10}
+\contentsline {section}{\numberline {10.1}临界点附近的热力学}{163}{section.10.1}
+\contentsline {part}{\@mypartnumtocformat {II}{统计力学}}{165}{part.2}
+\ttl@stoptoc {default@1}
+\ttl@starttoc {default@2}
+\contentsline {chapter}{\numberline {11}正则系综：Helmholtz 表象下的统计力学}{167}{chapter.11}
+\contentsline {section}{\numberline {11.1}概率分布}{167}{section.11.1}
 \contentsfinish 

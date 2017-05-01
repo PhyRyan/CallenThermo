@@ -1,0 +1,105 @@
+%!TEX root = ../CallenThermo.tex
+\chapter{正则系综：Helmholtz 表象下的统计力学}\label{chap6}
+\section{概率分布}\label{sec6.1}
+上一章所讲的微正则系综在原理上看起来很简单，但实际计算起来却仅仅对少数几种高度理想化的系统适用。计算在任意大小的“盒子”里分配给定能量的方案数量往往超出了我们的数学能力。而将能量给定这个约束去除的方案是存在的——考虑与热库所接触的系统，而不是绝热的。与热库相接触的系统的统计力学可以看做是在“Helmholtz表象”下的，或者用这儿的术语，在{\it 正则系综~(canonical formalism)}下的。
+
+对于一个与热库接触的系统而言，从零到任意高能量的全部态都是可能的。但是，与封闭系统相比，这里在各个态上并{\it 没}有相同的概率。即，系统在各个态上停留的时间并不相同。正则系综的关键在于确定系统处在诸微观态上的概率。这可以通过考察这个系统与热库共同组成的{\it 封闭}系统来得到解决，对于这个大系统，微观态的等概率原理依旧适用。
+
+我们可以通过一个简单的例子来说明。考虑三个骰子，其中一个是红的，另两个白的。三个骰子都掷了数千次。记录当且仅当三个骰子数之和为$12$时，红色骰子的点数。那么红色骰子点数为一、二、\dots 、六的频率各是多少呢？
+
+结果留给读者：红色骰子点数为一的频率是$2/25$、为二的概率为$3/25$、\dots 、为五的概率为$6/25$，为六的概率为$5/25$。在这个约束下，掷出一个六点的红骰子概率是$1/5$。
+
+这个红色骰子就正如我们所关心的系统一样，而白色骰子好比热源，点数对应于能量，总点数为$12$的限制又与（系统与热库的）总能量为常数类似。
+
+{\it 子系统处于宏观状$j$的概率$f_j$，等于子系统处于宏观状$j$（其能量为$E_j$）的微观状态数比上系统和热库全部微观状态数：}
+\begin{equation}
+f_j = \frac{\Omega_\text{热库}(E_\text{tot}-E_j)}{\Omega_\text{tot}(E_\text{tot})},
+\end{equation}
+这里$E_\text{tot}$为系统与热库的能量之和，$\Omega_\text{tot}$为系统与热库的全部状态数。分子上的$\Omega_\text{热库}(E_\text{tot}-E_j)$为子系统处于状态$j$时（给热库留下了$E_\text{tot}-E_j$的能量）热库的全部可能状态数。
+
+这是正则系综理论里最精华%
+\footnote{译注：原文为`seminal'，意为含精液的，引申为有重大意义的。}%
+的一个关系式，其可以重新改写成一个更便利的形式。分母项可以通过\eqref{equ15.1}式用复合系统的熵来表达，而分子和热库的熵相关。这样我们有
+\begin{equation}
+f_j = \frac{\exp\left\{k_\text{B}^{-1}S_\text{热库}(E_\text{tot}-E_j)\right\}}{\exp\left\{k_\text{B}^{-1}S_\text{tot}(E_\text{tot})\right\}} ,
+\end{equation}
+记$U$为子系统的平均能量，从熵的可加性，我们有
+\begin{equation}
+S_\text{tot}(E_\text{tot}) = S(U) + S_\text{热库}(E_\text{tot}-U).
+\end{equation}
+此外，将熵$S_\text{热库}(E_\text{tot}-E_j)$在平衡点$E_\text{tot}-U$附近展开
+\begin{equation}
+\begin{aligned}
+S_\text{热库}(E_\text{tot}-E_j)& = S_\text{热库}(E_\text{tot}-U+U-E_j)\\
+&= S_\text{热库}(E_\text{tot}-U) + (U-E_j)/T
+\end{aligned}
+\end{equation}
+展开式中不存在更多的项（这也是热库的定义）。将后两个方程带入$f_j$的表达式
+\begin{equation}
+f_j = {\mathrm e}^{\{U-TS(U)\}/(k_\text{B}T)} {\mathrm e}^{-E_j/(k_\text{B}T)},
+\end{equation}
+习惯上，我们将到处乱跑的因子$1/k_\text{B}T$记做
+\begin{equation}
+\beta \equiv 1/(k_\text{B}T)
+\end{equation}
+另外，$U-TS(U)$是系统的Helmholtz势，因此最后可以得到子系统处于状态$f_j$的概率为
+\begin{equation}
+f_j = {\mathrm e}^{\beta F}{\mathrm e}^{-\beta E_j}.
+\label{equ16.7}
+\end{equation}
+
+当然，Helmholtz势具体是多少，我们是不知道的，而是得把它给算出来。计算的关键在于，注意到\eqref{equ16.7}式中${\mathrm e}^{\beta F}$与态无关，而仅仅是扮演一个归一化因子的角色
+\begin{equation}
+\sum\limits_j f_j = {\mathrm e}^{\beta F}\sum\limits_j {\mathbf e}^{-\beta E_j} = 1,
+\end{equation}
+或者写作
+\begin{equation}
+{\mathrm e}^{-\beta F}=Z,
+\label{equ16.9}
+\end{equation}
+其中“正则配分求和”$Z$定义为%
+\footnote{译注：这个量现在常被称为正则配分函数。}
+\begin{equation}
+Z\equiv \sum\limits_j {\mathrm e}^{-\beta E_j}.
+\label{equ16.10}
+\end{equation}
+
+{\it 至此，我们得到了一套计算正则系综的完整算法。给出一个系统的全体可行态$j$及其能量$E_j$，计算配分求和\ref{equ16.10}式，由此可以得到配分求和作为温度（或$\beta$）以及影响能级的其他外参量（$V,N_1,N_2,\dots$）的函数。由\eqref{equ16.9}式可以得到Helmholtz势作为$T,V,N_1,N_r$的函数。这就是我们所需要的基本关系。}
+
+整个算法归结为
+\begin{equation}
+-\beta F = \ln \sum\limits_j \mathrm e^{-\beta E_j} \equiv \ln Z,
+\end{equation}
+读者可得好好记着这个式子。
+
+注意到$f_j$是占据状态$j$的概率，\eqref{equ16.7}、\eqref{equ16.9}及\eqref{equ16.10}式可以改写如下形式
+\begin{equation}
+f_j  = {\mathrm e}^{-\beta E_j}/\sum\limits_i \mathrm e^{-\beta E_i},
+\end{equation}
+平均能量自然就是
+\begin{equation}
+U = \sum\limits_j E_jf_j = \sum\limits_j E_j{\mathrm e}^{-\beta E_j}/\sum\limits_i \mathrm e^{-\beta E_i},
+\label{equ16.12}
+\end{equation}
+或者写成
+\begin{equation}
+U = -(\mathrm d/\mathrm d\beta)\ln Z
+\label{equ16.13}
+\end{equation}
+带入\eqref{equ16.9}式，用$F$表示$Z$，并记住$\beta = 1/k_\text{B}T$，可以验证热力学中早已得到的一个关系式$U=F+TS=F-T(\partial F/\partial T)$。\eqref{equ16.12}和\eqref{equ16.13}式在统计力学中非常有用，但得强调一遍它们并不算是基本关系。基本关系由\eqref{equ16.9}和\eqref{equ16.10}式给出，为$F$（而不是$U$）作为$\beta,V,N$的函数。
+
+对单位和整体结构作一个回顾将是有启发性的。$\beta$，作为倒数温度，是一个“自然单位”。正则系综用$\beta,V$和$N$表示出了$\beta F$。即，$F/T$作为$1/T,V$以及$N$的函数被给出。{\it 这就是在$S[1/T]$表象下的基本方程}（请回忆\ref{sec5.4}节）。正如同微正则系综理论自然的给出熵表象一样，正则系综理论自然的给出$S[1/T]$表象。而我们在\ref{chap17}中所要讨论的巨正则系综理论，将自然给出Massieu函数。当然我们还是得记住正则系综是基于Helmholtz势的，可别弄错了表象%
+\footnote{译注：原文为``misrepresentation''，为“歪曲、误传”之意，此处应有双关``mis-representation''，弄错表象之意}%
+。
+
+{\noindent\bf 习题}
+\begin{itemize}
+\item[16.1-1] 证明\eqref{equ16.13}式等价于$U=F+TS$。
+\item[16.1-2] 从\eqref{equ16.9}和\eqref{equ16.10}式给出的正则算法出发，将压强用配分求和的某个导数表示出来。进一步的，将压强用导数$\partial E_j/\partial V$（以及$T$和$E_j$）表示出来。你能否对这个式子给一个有启发性的解释？
+\item[16.1-3] 证明$S/k_\text{B}=\beta^2\partial F/\partial\beta$，并将$S$用$Z$与其对$\beta$的导数表示。
+\item[16.1-4] 证明$c_v=-\beta(\partial s/\partial\beta)_v$，将$c_v$用配分求和及其对$\beta$的导数表示。
+\begin{flushleft}
+{\it 答案}\\
+$c_v=N^{-1}k_\text{B}\beta^2\frac{\partial^2\ln Z}{\partial \beta^2}$
+\end{flushleft}
+\end{itemize}
