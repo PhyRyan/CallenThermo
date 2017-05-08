@@ -18,7 +18,7 @@ f_j = \frac{\Omega_\text{热库}(E_\text{tot}-E_j)}{\Omega_\text{tot}(E_\text{to
 这里$E_\text{tot}$为系统与热库的能量之和，$\Omega_\text{tot}$为系统与热库的全部状态数。分子上的$\Omega_\text{热库}(E_\text{tot}-E_j)$为子系统处于状态$j$时（给热库留下了$E_\text{tot}-E_j$的能量）热库的全部可能状态数。
 
 这是正则系综理论里最精华%
-\footnote{译注：原文为`seminal'，意为含精液的，引申为有重大意义的。}%
+\mpar{译注：原文为`seminal'，意为含精液的，引申为有重大意义的。}%
 的一个关系式，其可以重新改写成一个更便利的形式。分母项可以通过\eqref{equ15.1}式用复合系统的熵来表达，而分子和热库的熵相关。这样我们有
 \begin{equation}
 f_j = \frac{\exp\left\{k_\text{B}^{-1}S_\text{热库}(E_\text{tot}-E_j)\right\}}{\exp\left\{k_\text{B}^{-1}S_\text{tot}(E_\text{tot})\right\}} ,
@@ -58,7 +58,7 @@ f_j = {\mathrm e}^{\beta F}{\mathrm e}^{-\beta E_j}.
 \label{equ16.9}
 \end{equation}
 其中“正则配分求和”$Z$定义为%
-\footnote{译注：这个量现在常被称为正则配分函数。}
+\mpar{译注：这个量现在常被称为正则配分函数。}
 \begin{equation}
 Z\equiv \sum\limits_j {\mathrm e}^{-\beta E_j}.
 \label{equ16.10}
@@ -89,7 +89,7 @@ U = -(\mathrm d/\mathrm d\beta)\ln Z
 带入\eqref{equ16.9}式，用$F$表示$Z$，并记住$\beta = 1/k_\text{B}T$，可以验证热力学中早已得到的一个关系式$U=F+TS=F-T(\partial F/\partial T)$。\eqref{equ16.12}和\eqref{equ16.13}式在统计力学中非常有用，但得强调一遍它们并不算是基本关系。基本关系由\eqref{equ16.9}和\eqref{equ16.10}式给出，为$F$（而不是$U$）作为$\beta,V,N$的函数。
 
 对单位和整体结构作一个回顾将是有启发性的。$\beta$，作为倒数温度，是一个“自然单位”。正则系综用$\beta,V$和$N$表示出了$\beta F$。即，$F/T$作为$1/T,V$以及$N$的函数被给出。{\it 这就是在$S[1/T]$表象下的基本方程}（请回忆\ref{sec5.4}节）。正如同微正则系综理论自然的给出熵表象一样，正则系综理论自然的给出$S[1/T]$表象。而我们在\ref{chap17}中所要讨论的巨正则系综理论，将自然给出Massieu函数。当然我们还是得记住正则系综是基于Helmholtz势的，可别弄错了表象%
-\footnote{译注：原文为``misrepresentation''，为“歪曲、误传”之意，此处应有双关``mis-representation''，弄错表象之意}%
+\mpar{译注：原文为``misrepresentation''，为“歪曲、误传”之意，此处应有双关``mis-representation''，弄错表象之意}%
 。
 
 {\noindent\bf 习题}
@@ -103,3 +103,75 @@ U = -(\mathrm d/\mathrm d\beta)\ln Z
 $c_v=N^{-1}k_\text{B}\beta^2\frac{\partial^2\ln Z}{\partial \beta^2}$
 \end{flushleft}
 \end{itemize}
+<<<<<<< HEAD
+
+\section{可加的能量与配分求和的可分性}\label{sec16.2}
+
+为了展现正则系综理论在实际问题上显著的简易性，我们重新回顾一下\ref{sec15.3}节中所提到的二态模型。$\tilde N$个可分辨的``原子''，各自可能处于两个态上，其能量分别为$0$和$\varepsilon$。对于微正则系综理论而言，即便是将问题拓展到仅仅三个态上，单去求激发能量，这也是难以求解的。而正则系综理论则能相当简单的处理这个问题！
+
+考虑一个系统由$\tilde N$个可分辨的``单元''构成，每个单元都对应于系统一个独立（无相互作用的）的激发模式。对于由无相互作用的物质成分组成的系统，如理想气体分子，这里``单元''就对应于单个的分子。而对于强相互作用的系统，单元可能对应于某种波状的集体激发，例如振动模式或者电磁模式。{\it ``单元''的标识性特征是，系统的总能量等于所有单元的能量之和，这些能量都是相互独立而没有相互作用的。}
+
+每个单元可以布居在一系列{\it 轨道态(orbital states)}（此后我们使用{\it 轨道态}来描述单元的态，以与集体系统的态相区分）上。第$i$个单元处在第$j$个轨道态上的能量记为$\varepsilon_{ij}$。这些单元的能量和轨道态的数目不一定得要是一样的。{\it 系统的总能量等于各个单元能量之和，每个单元所能处在的轨道态与其他单元的布居无关。}故配分求和为
+\begin{align}
+Z &= \sum\limits_{j,j',j'',\dots}\mathrm e^{-\beta (\varepsilon_{1j}+\varepsilon_{2j}+\varepsilon_{3j}+\dots)}\label{equ16.14} \\
+ &= \sum\limits_{j,j',j'',\dots}\mathrm e^{-\beta\varepsilon_{1j}}\mathrm e^{-\beta\varepsilon_{2j}}\mathrm e^{-\beta\varepsilon_{3j}}\dots \\
+ &= \sum\limits_{j}\mathrm e^{-\beta\varepsilon_{1j}}\sum\limits_{j'}\mathrm e^{-\beta\varepsilon_{2j}}\sum\limits_{j''}\mathrm e^{-\beta\varepsilon_{3j}}\dots \\
+ &= z_1z_2z_3\dots, \label{equ16.17}
+\end{align}
+其中$z_i$为“第$i$个单元的配分求和”，定义为
+\begin{equation}
+z_i = \sum\limits_{j}\mathrm e^{-\beta\varepsilon_{ij}},
+\end{equation}
+{\it 配分求和因子。进一步的，Helmholtz势对于诸单元是可加的}
+\begin{equation}
+-\beta F = \ln Z = \ln z_1+\ln z_2+\dots, \label{equ16.21}
+\end{equation}
+这个结果贼简单、贼强并且贼有用，让我们不得不再强调一遍，它对于任何满足如下条件的系统适用：(a)能量等于诸单元能量之和，以及(b)每个单元所能处在的轨道态与其他单元的布居无关。
+
+\ref{sec15.3}节中提到的“二态模型”满足上述的条件，即
+\begin{equation}
+Z = z^{\tilde N}= (1+\mathrm e^{-\beta\varepsilon})^{\title N},
+\end{equation}
+和
+\begin{equation}
+F = -\tilde Nk_\text{B}T\ln(1+\mathrm e^{-\beta\varepsilon}).
+\end{equation}
+证明其与\ref{sec15.3}节的结果的等价性的任务留给读者。如果轨道数是三而不是二，单粒子配分求和$z$就有三项，而Helmholtz势对数函数的变量中也会多加一项。
+
+Einstein晶体模型(\ref{sec15.2}节)也能体现正则系综理论的简洁性。这里“单元”是振动模式，单个模式的配分求和为
+\begin{equation}
+z = 1 + \mathrm e^{-\beta\hbar\omega_0} + \mathrm e^{-2\beta\hbar\omega_0} + \mathrm e^{-3\beta\hbar\omega_0} + \dots = \sum\limits_{n=0}^{\infty} \mathrm e^{-n\beta\hbar\omega_0},
+\end{equation}
+“几何级数”\mpar{译注：即等比级数}的和为
+\begin{equation}
+z = \frac{1}{1-\mathrm e^{-\beta\hbar\omega_0}}.
+\end{equation}
+由于存在着$3\tilde N$个振动模式，故在正则系综理论下，Einstein模型的基本方程为
+\begin{equation}
+F = -\beta\ln z^{3\tilde N}=3\tilde Nk_\text{B}T\ln(1-\mathrm e^{-\beta\hbar\omega_0}).
+\label{equ16.24}
+\end{equation}
+显然，在这套框架下，Einstein关于所有振动模式的频率都相同的简化假设成了没有必要的。在\ref{sec16.7}节中，我们将讨论由P. Debye提出的一个物理上更可信的假设。
+
+\noindent{\bf 习题}
+\begin{itemize}
+\item[16.2-1] 考虑一个包括三个不同粒子的系统。第一个粒子有两个轨道态，能量分别为$\varepsilon_{11}$和$\varepsilon_{12}$。第二个粒子可能的能量分别为$\varepsilon_{21}$和$\varepsilon_{22}$，第三个粒子是$\varepsilon_{31}$和$\varepsilon_{32}$。根据\eqref{equ16.14}式写下配分求和，并通过详细的过程将其化成\eqref{equ16.17}式的形式。
+\item[16.2-2] 证明，对于二能级系统，通过\eqref{equ16.21}式算出的Helmholtz势与\ref{sec15.3}节中给出的基本方程等价。 
+\item[16.2-3] 考虑无电荷质点作为气体粒子（并略去引力相互作用），其能量是否是可加的？若半数粒子带正电，另外半数粒子带负电，配分求和是否是可分的？如果粒子是遵循Pauli不相容原理的fermion（例如中微子），配分求和是否是可分的？
+\item[16.2-4] 根据\eqref{equ16.24}式计算单个模式的热容。
+\item[16.2-5] 根据\eqref{equ16.24}式计算单个模式的能量。当$T\rightarrow 0$以及$T\rightarrow \infty$时，$U(T)$的领头项是什么？
+\item[16.2-6] 某种二元合金由$\tilde N_A$个$A$类原子和$\title N_B$个$B$类原子构成。每个$A$类原子分别可以处在基态和一个激发态上，其间有能量差$\varepsilon$（其他态的能量都太高了，以至于在所考虑的温度范围内没有影响）。每个$B$类原子同样分别可以处在基态和一个激发态上，其间有能量差$2\varepsilon$。整个系统处于温度$T$。
+	\begin{itemize}
+	\item[a)] 计算系统的Helmholtz势。
+	\item[b)] 计算系统的热容。
+	\end{itemize}
+\item[16.2-7] 某类顺磁盐由\SI{1}{\mole}无相互作用的离子构成，各自拥有一单位Bohr磁矩($\mu_\text{B}=\SI{9.274e-24}{\joule\per\tesla}$)。磁场$B_e$给定在某方向上，离子可能分别处在磁矩方向平行或反平行于磁场方向的态上。
+	\begin{itemize}
+	\item[a)] 假定系统温度维持在$T=\SI{4}{\kelvin}$，$B_e$从\SI{1}{\tesla}增大至\SI{10}{\tesla}，热库中流出了多少热量？
+	\item[b)] 假定系统与外界绝热，$B_e$从\SI{10}{\tesla}减小至\SI{1}{\tesla}，系统末态的温度是多少？（这个过程被称为绝热去磁降温。）
+	\end{itemize}
+\end{itemize}
+
+\section{气体的内部模式}\label{sec16.3}
+=======
+>>>>>>> ChzRuan/master
