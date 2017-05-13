@@ -86,17 +86,14 @@
 \contentsline {section}{\numberline {9.5}一级相变的普遍属性}{167}{section.9.5}
 \contentsline {section}{\numberline {9.6}多组分系统一级相变——Gibbs 相律}{168}{section.9.6}
 \contentsline {section}{\numberline {9.7}两组分系统的相图}{171}{section.9.7}
-\contentsline {chapter}{\numberline {10}临界现象}{173}{chapter.10}
-\contentsline {section}{\numberline {10.1}临界点附近的热力学}{173}{section.10.1}
-\contentsline {part}{\@mypartnumtocformat {II}{统计力学}}{175}{part.2}
-\ttl@stoptoc {default@1}
-\ttl@starttoc {default@2}
-\contentsline {chapter}{\numberline {15}熵表象下的统计力学：微正则系综}{177}{chapter.15}
-\contentsline {section}{\numberline {15.1}封闭系统的熵的物理意义}{177}{section.15.1}
-\contentsline {section}{\numberline {15.2}晶体的Einstein模型}{180}{section.15.2}
-\contentsline {section}{\numberline {15.3}双态系统}{183}{section.15.3}
-\contentsline {chapter}{\numberline {16}正则系综：Helmholtz 表象下的统计力学}{185}{chapter.16}
-\contentsline {section}{\numberline {16.1}概率分布}{185}{section.16.1}
-\contentsline {section}{\numberline {16.2}可加的能量与配分求和的可分性}{188}{section.16.2}
-\contentsline {section}{\numberline {16.3}气体的内部模式}{190}{section.16.3}
+\contentsline {chapter}{\numberline {15}熵表象下的统计力学：微正则系综}{173}{chapter.15}
+\contentsline {section}{\numberline {15.1}封闭系统的熵的物理意义}{173}{section.15.1}
+\contentsline {section}{\numberline {15.2}晶体的Einstein模型}{176}{section.15.2}
+\contentsline {section}{\numberline {15.3}双态系统}{179}{section.15.3}
+\contentsline {section}{\numberline {15.4}聚合物模型——重访橡胶带}{181}{section.15.4}
+\contentsline {section}{\numberline {15.5}状态数计算技巧与策略；高维度}{182}{section.15.5}
+\contentsline {chapter}{\numberline {16}正则系综：Helmholtz 表象下的统计力学}{187}{chapter.16}
+\contentsline {section}{\numberline {16.1}概率分布}{187}{section.16.1}
+\contentsline {section}{\numberline {16.2}可加的能量与配分求和的可分性}{190}{section.16.2}
+\contentsline {section}{\numberline {16.3}气体的内部模式}{192}{section.16.3}
 \contentsfinish 

@@ -1,3 +1,4 @@
+
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 %times,
@@ -20,6 +21,8 @@
 \documentclass[11pt,fleqn,twoside]{book}
 \makeatletter	% @ is now a normal "letter" for TeX
 
+
+\usepackage{longtable}
 \usepackage{pifont}
 \newcommand\cirfootnote{\ding{\numexpr171+\value{footnote}}}
 \usepackage{ctex,amsmath}
@@ -36,7 +39,7 @@
 \usepackage[version=3]{mhchem}
 \usepackage{draftwatermark}
 \SetWatermarkText{\textsc{Draft Translation}}
-\SetWatermarkLightness{0.88}
+\SetWatermarkLightness{2}
 \SetWatermarkScale{0.4}
 \usepackage{setspace}
 \usepackage{marginfix}
@@ -52,12 +55,14 @@
 \usepackage{mathrsfs}
 \usepackage{ulem}
 \usepackage{fontspec}
+\setCJKmainfont[BoldFont={Hiragino Sans GB},ItalicFont={KaiTi}]{SimSun}
 \usepackage{draftwatermark}
 \SetWatermarkText{\textsc{Draft Translation}}
-\SetWatermarkLightness{0.99}
+\SetWatermarkLightness{0.88}
 \SetWatermarkScale{0.4}
 \usepackage{setspace}
 \usepackage{marginfix}
+
 \usepackage{tabularx}
 
 \newenvironment{mymath}{$}{
@@ -86,6 +91,7 @@
 
 
 \input{structure}
+\usepackage{booktabs}
 %----------------------------------------------------------------------------------------
 
 
@@ -121,7 +127,7 @@
 {\begin{tikzpicture}[remember picture,overlay]
 \node[anchor=north west,inner sep=0pt] at (0,0) {\includegraphics[width=\paperwidth]{background}}; % Background image
 \draw[anchor=north] (midpoint) node [fill=orange,fill opacity=0.2,text opacity=1,inner sep=1cm]{\Huge\centering\sffamily\parbox[c][][t]{\paperwidth}{\bf \centering \zihao{-0}  热力学与统计物理导论\\[1pt] % Book title
-{\bf \zihao{3} 原著：Herbert B. Callen\quad 翻译：超理汉化物理组}\\[1pt] % Author name
+{\bf \zihao{3} 原著：Herbert B. Callen\quad 翻译：超理汉化组}\\[1pt] % Author name
 {\bf \zihao{3} \chntoday}
 }};
 \end{tikzpicture}};
@@ -144,32 +150,53 @@
 %	\AddToShipoutPicture{
 %	    \put(480,0){\makebox(-15,0)[bl]{\usebox{\mygraphic}}}}
 
-\chapterimage{chapter_head_1.pdf}
+\chapterimage{nozakikun.png}
 \input{Preface}
 
+\chapterimage{haruna.png}
 \tableofcontents % Print the table of contents itself
-
-%\chapterimage{homura1.png}
 
 \pagestyle{fancy} % Print headers again
 \setcounter{page}{0}
 
 \input{./Parts/Part1}
-\input{./Chaps/Chap1}
-\input{./Chaps/Chap2}
-\input{./Chaps/Chap3}
-\input{./Chaps/Chap4}
-\input{./Chaps/Chap5}
-\input{./Chaps/Chap6}
-\input{./Chaps/Chap7}
-\input{./Chaps/Chap8}
-\input{./Chaps/Chap9}
-\input{./Chaps/Chap10}
 
-\input{./Parts/Part2}
+\chapterimage{jerry.png}
+\input{./Chaps/Chap1}
+
+\chapterimage{sakura02.png}
+\input{./Chaps/Chap2}
+
+\chapterimage{caster01.png}
+\input{./Chaps/Chap3}
+
+\chapterimage{hatsuyuki01.png}
+\input{./Chaps/Chap4}
+
+\chapterimage{tsukimime.png}
+\input{./Chaps/Chap5}
+
+\chapterimage{akira.png}
+\input{./Chaps/Chap6}
+
+\chapterimage{kurisu.png}
+\input{./Chaps/Chap7}
+
+\chapterimage{meiri.png}
+\input{./Chaps/Chap8}
+
+\chapterimage{maya.png}
+\input{./Chaps/Chap9}
+
+\chapterimage{anri.png}
 \setcounter{chapter}{14}
 \input{./Chaps/Chap15}
+
+\chapterimage{bakemono.png}
 \input{./Chaps/Chap16}
+
+
+\input{postscript}
 %\begin{table}[h]
 %\centering
 %\begin{tabular}{l l l}
@@ -208,6 +235,7 @@
 %\bibliographystyle{apsrev4-1}
 %\bibliography{bibliography}
 \end{spacing}
+
 
 
 \end{document}
