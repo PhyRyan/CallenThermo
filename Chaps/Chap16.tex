@@ -1,7 +1,7 @@
 %!TEX root = ../CallenThermo.tex
 \chapter{正则系综：Helmholtz 表象下的统计力学}\label{chap16}
 \section{概率分布}\label{sec16.1}
-上一章所讲的微正则系综在原理上看起来很简单，但实际计算起来却仅仅对少数几种高度理想化的系统适用。计算在任意大小的“盒子”里分配给定能量的方案数量往往超出了我们的数学能力。而将能量给定这个约束去除的方案是存在的——考虑与热库所接触的系统，而不是绝热的。与热库相接触的系统的统计力学可以看做是在“Helmholtz表象”下的，或者用这儿的术语，在{\it 正则系综~(canonical formalism)}下的。
+上一章所讲的微正则系综在原理上看起来很简单，但实际计算起来却仅仅对少数几种高度理想化的系统适用。计算在任意大小的“盒子”里分配给定能量的方案数量往往超出了我们的数学能力。而将能量给定这个约束去除的方案是存在的——考虑与热库所接触的系统，而不是绝热的。与热库相接触的系统的统计力学可以看做是在“Helmholtz表象”下的，或者用这儿的术语，在{\it 正则系综理论~(canonical formalism)}下的。
 
 对于一个与热库接触的系统而言，从零到任意高能量的全部态都是可能的。但是，与封闭系统相比，这里在各个态上并{\it 没}有相同的概率。即，系统在各个态上停留的时间并不相同。正则系综的关键在于确定系统处在诸微观态上的概率。这可以通过考察这个系统与热库共同组成的{\it 封闭}系统来得到解决，对于这个大系统，微观态的等概率原理依旧适用。
 
@@ -103,7 +103,7 @@ U = -(\mathrm d/\mathrm d\beta)\ln Z
 $c_v=N^{-1}k_\text{B}\beta^2\frac{\partial^2\ln Z}{\partial \beta^2}$
 \end{flushleft}
 \end{itemize}
-<<<<<<< HEAD
+
 
 \section{可加的能量与配分求和的可分性}\label{sec16.2}
 
@@ -173,5 +173,77 @@ F = -\beta\ln z^{3\tilde N}=3\tilde Nk_\text{B}T\ln(1-\mathrm e^{-\beta\hbar\ome
 \end{itemize}
 
 \section{气体的内部模式}\label{sec16.3}
-=======
->>>>>>> ChzRuan/master
+
+对于分子气体，其激发包括三个整体平动模式、振动模式、转动模式、电子的模式以及原子核的激发模式。为简单起见，我们暂且先假定这些模式之间是独立的，后面再来检验这个假定的合理性。配分求和对于这些模式是可分的
+\begin{equation}
+Z = Z_\text{平动}Z_\text{振动}Z_\text{转动}Z_{电子}Z_{核},
+\end{equation}
+进一步的，可以分解成对于单个分子的乘积
+\begin{equation}
+Z_\text{振动}=z_\text{振动}^{\tilde N},\quad Z_\text{转动}=z_\text{转动}^{\tilde N},
+\end{equation}
+对于电子和核的配分求和也是类似的。
+
+气体是否是“理想的”将会影响到平动配分求和。其需要特别的小心处理，我们将这一部分内容推后放在了\ref{sec16.10}节。现在先简单的假定任何分子间的碰撞都不会与内部模式（转动、振动等）相耦合。
+
+$\tilde N$个同一类振动模式（分别分布在各个分子上）与Einstein 晶体模型原则上都是一样的，即谐振子。对于频率为$\omega_0$的成分
+\begin{equation}
+Z_\text{振动}=z_\text{振动}^{\tilde N}=(1-\mathrm e^{-\beta\hbar\omega_0})^{-\tilde N},
+\end{equation}
+该振动模式对Helmholtz势的贡献由\eqref{equ16.24}式给出（将$3\tilde N$替换成$\tilde N$）。其对热容的贡献在图\ref{fig15.2}中给出（此时纵坐标单位应该是$c/R$而不是$c/3R$）。正如\ref{sec13.1}节中所描述的一样，热容在$k_\text{B}T\simeq \hbar\omega_0$附近“呈阶梯状地上升”了一个渐进于$c=R$的量。图\ref{fig13.1}所绘制的包括了两个振动模式的贡献，满足$\omega_2=15\omega_1$。
+
+典型的振动温度$\hbar\omega_0/k_\text{B}$从数千开尔文（对于包含较轻部件的分子，例如\ce{H_2}约为\SI{6300}{\kelvin}），到数百开尔文（对于包含较重部件的分子，例如\ce{Br_2}是\SI{309}{\kelvin}）。
+
+我们从异核双原子分子（例如\ce{HCl}）出发讨论气体中的转动模式；为了描述其取向，我们需要两个角度坐标。这类异核双原子分子的转动能量是量子化的，其能量本征值由下式给出
+\begin{equation}
+\varepsilon_\ell = \ell(\ell+1),\quad \ell =0,1,2,\dots
+\label{equ16.28}
+\end{equation}
+诸能级的简并度为$(2\ell+1)$。能量单位$\varepsilon$等于$\frac{1}{2}\hbar^2/(\text{转动惯量})^2$，对于\ce{HCl}来说约等于\SI{2e-21}{\joule}。典型的能级间隔和$\varepsilon$的量级相当，\ce{HCl}这里大概对应于温度$\varepsilon/k_\text{B}\simeq \SI{15}{\kelvin}$——当然，比轻分子更大，比重分子更小。
+
+单个分子的转动配分求和是
+\begin{equation}
+z_\text{转动}=\sum\limits_{\ell=0}^{\infty}(2\ell+1)\mathrm e^{-\beta\ell(\ell+1)\varepsilon}.
+\label{equ16.29}
+\end{equation}
+如果有$k_\text{B}T\gg\varepsilon$，求和可以由积分近似给出。注意到$2\ell+1$正好是$\ell(\ell+1)$的导数，故可将积分变量$x$选作$\ell(\ell+1)$
+\begin{equation}
+z_\text{转动}\simeq\int_{0}^{\infty}\mathrm e^{-\beta\varepsilon x}\,\mathrm dx =\frac{1}{\beta\varepsilon}=\frac{k_\text{B}T}{\varepsilon}.
+\end{equation}
+
+如果$k_\text{B}T$比$\varepsilon$小，亦或是同一个量级，那么实践中我们通常精确计算级数的前$\ell'$项，满足$\ell'(\ell'+1)\gg k_\text{B}T$，然后通过积分（从$\ell'$积到无穷大）近似计算后面的那些项。具体可以参考习题16.3-2。
+
+读者可以尝试证明，当$k_\text{B}T\gg\varepsilon$时，平均能量为$k_\text{B}T$。
+
+对于同核双原子分子，例如\ce{O_2}或者\ce{H_2}，其受到一些量子的对称性条件的约束，我们不会在这里做具体讨论。对于不同的同核双原子分子，配分求和中仅有偶数项或奇数项才是允许的。在高温极限下，这个约束的影响等价于给单分子配分函数简单的除二。
+
+原子核以及电子的贡献也可以用类似的办法来算，但一般来说只有它们各自的基态才会有贡献。$z_\text{核}$简单的等于其基态的简并度。这些因子在Helmholtz势中仅贡献一项$\tilde Nk_\text{B}T\ln(\text{简并度})$。
+
+重新讨论最开始对于这些模式独立性的假定会是有意思的。这个假定一般来说是一个好的（但{\it 并非}是严格的）近似。双原子分子的振动会改变核间距，从而影响转动惯量。这只是因为一般来说振动相对转动来说相对很快，振动模式只能感受到一个{\it 平均}的核间距，从而相当于与振动态相独立。
+
+\noindent{\bf 习题}
+\begin{itemize}
+\item[16.3-1] 在$k_\text{B}T\gg \varepsilon$的区域中计算异核双原子分子的单分子平均转动能量以及其对热容的贡献。
+\item[16.3-2] 在\eqref{equ16.29}式中，通过精确计算前两项并用积分近似替代剩下的项，来计算转动对于单分子Helmholtz势的贡献。Euler-McLaurin求和公式会对这个问题有帮助
+\begin{equation*}
+\sum\limits_{j=0}^{\infty}f(j) \simeq \int_0^{\infty}f(\theta)\,\mathrm d\theta +\frac{1}{2}f(0)-\frac{1}{12}f'(0)+\dots
+\end{equation*}
+式中$f'(0)$代表$f(\theta)$的导数。
+\item[16.3-3] 某种同核双原子分子气体具有一个振动模式，频率为$\omega$，转动能量参数为$\varepsilon$（\eqref{equ16.28}式）。假定分子之间没有相互作用，即气体为理想气体。完整计算在温度满足$T\gg \varepsilon/k_\text{B}$以及$T\simeq \hbar\omega/k_\text{B}$时体系的基本方程。
+\end{itemize}
+
+\section{可分系统中的概率}\label{sec16.4}
+
+\section{小系统的统计力学：系综}\label{sec16.5}
+
+\section{态密度与轨道态密度}\label{sec16.6}
+
+\section{非金属晶体的Debye模型}\label{sec16.7}
+
+\section{电磁辐射}\label{sec16.8}
+
+\section{经典态密度}\label{sec16.9}
+
+\section{经典理想气体}\label{sec16.10}
+
+\section{高温下的性质——能均分定理}\label{sec16.11}
