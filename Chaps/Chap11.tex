@@ -1,0 +1,55 @@
+\usepackage{CJK}
+\chapter{Nernst假说}
+\label{chap11}
+
+\section{Nernst假说，Thomsen–Berthelot 原理}
+\label{sec11.1}
+经典热力学的一方面依然存在。作为假设4的探讨，熵在0K时也为零。
+
+Walther Nerst在1907年第一次提出这个比我们的假说4弱的假说，只说明了随着温度接近零，等温过程中的熵变变为零。通过Francis Simon 的工作和Max Plank 的公式，我们所采用的理论出现了，不过这也被称为Nernst假说。这个假说也被经常称之为热力学第三定理。
+
+不像其他假说的形势，Nerst假设不是热力学理论整体结构的一部分。在整个理论体系几乎完善的情况下，我们仍能简单的附上Nernst假说。它的意义仅仅在低温范围，在温度趋向于零的时候。
+
+Nernst理论的历史起源是丰富的。他们在“Thomsen和Berthelot定律“一种（非严格）经验定律，化学家早已预言了化学反应的平衡态。
+
+考虑一个有着恒定温度和气压的系统（比如在大气环境下），从约束中释放出来（比如混合两种之前分开的反应物）。根据Thomsen和Berthelot的经验定理，系统进入平衡状态伴随着大量热量的放出，或者，用更常见的话来说，这个过程是实现放热最多的过程。
+
+这个经验定律的正式表达用焓的形式表述非常方便。等压过程的焓作为热量的势能，这样热流量为
+\begin{equation}
+	\text{热流量}= H_{\text{初始}}-H_{\text{最终}}	
+\end{equation}
+
+Thomsen和Berthlot的这个表述与平衡态就是$H_{\text{初始}-H_{\text{最终}}}$的最大值或者$H_{\text{最终}}$的最小值是等价的。
+
+在常温常压下适当的平衡态准则为最小的Gibbs势。为什么这两种不同的准则会在低温情况下给出同样的预言呢（事实上，在接近室温情况下也同样如此）？
+
+在一个等温过程中
+\begin{equation}
+	\Delta G= \Delta H- T\Delta S	
+\end{equation}
+
+这样在温度为0K时，Gibbs势的改变和焓的改变是相同的（$\Delta S$肯定被限制）。 但这还不足以说明为什么这在温度变化足够大的情况下依然能近似相等，在两边都除以温度T后：
+\begin{equation}
+	\frac{\Delta G- \Delta H}{T}=- \Delta S	
+\end{equation}
+
+我们从11.2式子中可以发现，$\Delta G= \Delta H$在$T=0K$时。所以11.3式的左边在$T\rightarrow 0$时是不定的。这个极限值可以通过数值微分和分母分离（L'HOSPITAL's 规则）来得到，
+\begin{equation}
+	(\frac{\Delta G}{T})_{T\rightarrow 0}-(\frac{\Delta H}{T})_{T\rightarrow 0}=- \lim\limits_{T\rightarrow 0} \Delta S	
+\end{equation}
+
+假设：
+\begin{equation}
+	\lim\limits_{T\rightarrow 0} \Delta S=0
+\end{equation}
+
+这是Nerst为了确保$\Delta G$和$\Delta H$有相同的初始斜率（图11.1），因此焓的改变量在相当的温度范围内非常接近于Gibbs势。
+
+在Nernst的表述中，在0K的可逆等温过程中，熵$\Delta S$的改变为零的情况可以重述为：$T=0$的等温过程同时也为等熵的（或绝热）。这等熵和等热的一致性在图11.2中说明了。
+
+Planck的表述给熵分配了一个特定的值：在T=0K的等温就与S=0的绝热过程相一致。
+
+在热力学背景下，熵的绝对值没有先验意义。Planck的重述也只在统计力学下才有意义，我们会在第二部分讲述这块内容。事实上，相比于Nernst的假说我们选择了Planck的假说形式因为他的表述更为简洁而不是因为其他热力学的原因。
+
+通过Nernst假说的Planck形式，在引用的文献中，我们建立了不同气体和其他系统的的熵的绝对值表。
+$$$$$$$$
